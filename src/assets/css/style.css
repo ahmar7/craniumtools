@@ -46,3 +46,25 @@ text-align: center;
 color: #3D3D44;
 
 }
+
+@media (max-width:768px) {
+    .me {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.mt {
+    margin-top: 50px;
+}
+.mb {
+    margin-bottom: 50px;
+}
+
+    
+}
+@media (max-width:600px) {
+    .me {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    
+}
