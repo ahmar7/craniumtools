@@ -7,15 +7,16 @@ import {
   Link,
   Routes,
 } from "react-router-dom";
+import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
   
 const Routerapp = () => {
   return (
     <div>
       <Router>
-        <Routes> 
+        <Routes>
           <Route exact path="/" element={<Home />} />
-           
+          <Route exact path="dashboard" element={<Dashboard />} />
         </Routes>
       </Router>
     </div>
