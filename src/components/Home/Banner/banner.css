@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "General Sans";
+  src: url("../../../assets/fonts/GeneralSans-Variable.ttf") format("truetype");
+  font-weight:   700;
+  font-display: swap;
+  font-style: normal;
+}
+.landing-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+align-items: center;
+    
+}
+ .landing-header .left-colmn{
+    width: 40%;
+    margin-top: -70px;
+}
+ .landing-header .right-colmn{
+    width: 40%;
+}
+.banner-heading{  
+width: 584px;
+height: 198px; 
+font-family: 'General Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 66px; 
+margin: 0;
+margin-bottom: 20px !important;
+letter-spacing: -0.5px;
+text-transform: capitalize;
+
+color: #141430;
+ 
+}
+.banner-c{
+    color: #435AF2;
+}
+.banner-para{
+    width: 584px;
+height: 60px;
+margin: 0;
+margin-bottom: 20px !important;
+font-family: 'General Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px; 
+color: #3D3D44; 
+}
+.building-btn{ 
+  padding: 14px 28px;
+  gap: 10px; 
+  border :  none;
+  background:  #435AF2;;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-family: "General Sans";
+  font-size: 16px;
+  font-weight: 500;
+}
+.banner-img{ 
+width: 584px;
+height: 619px; 
+flex: none;
+order: 1;
+flex-grow: 0;
+}

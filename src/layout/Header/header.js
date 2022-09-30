@@ -5,7 +5,7 @@ import "./header.css"
 const Header = () => {
     return (
         <div className='main-container'>
-             <div className="header">
+             <div className="header me">
                 <div className="left-colmn">
                     <ul className='nav-ul'>
                         <li><Link to=""><img src={Logo} alt="" /></Link></li>
@@ -16,6 +16,7 @@ const Header = () => {
                 </div>
                 <div className="right-colmn">
                     <button className='panel-btn'>Project Panel</button>
+                    
                 </div>
              </div>
         </div>
