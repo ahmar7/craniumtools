@@ -61,7 +61,8 @@ label {
   margin-left: 30px;
 }
 .raffle-inputcontainer {
-  margin-top: 20px;width: 94%;
+  margin-top: 20px;
+  width: 94%;
 
   margin-bottom: 20px;
 }
@@ -162,15 +163,15 @@ label {
   .raffle-form .colmn-right {
     width: 100%;
     margin-left: 0;
-}
-.raffle-input{
-  padding: 13px 10px;
-  width: 95%;
-}
-.card{
-  width: 250px;
-}
-.raffle-inputcontainer { 
-    width: 100%; 
-}
+  }
+  .raffle-input {
+    padding: 13px 10px;
+    width: 95%;
+  }
+  .card {
+    width: 250px;
+  }
+  .raffle-inputcontainer {
+    width: 100%;
+  }
 }

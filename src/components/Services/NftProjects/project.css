@@ -1,12 +1,88 @@
 .delete-icon,
-.edit-icon{
-    display: inline;
+.edit-icon {
+  display: inline;
 }
-.action-btn{
-    padding-right: 50px !important;
+.action-btn {
+  padding-right: 50px !important;
 }
-@media (max-width:600px) {
-   .action-btn{
+@media (max-width: 600px) {
+  .action-btn {
     padding-right: 35px !important;
-} 
+  }
 }
+/* Card modal */
+.profile-modal-card {
+  margin-top: 60px !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.modal-card {
+  width: 20%;
+  padding: 15px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+  background: #ffffff;
+  /* Box-shadow */
+
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.1);
+}
+.dp {
+  width: 100%;
+  text-align: center;
+}
+.modal-card-head {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.modal-card-head h3 {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  text-align: center;
+
+  color: #000000;
+}
+.modal-card-delete {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.modal-card-edit {
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+}
+@media (min-width: 1400px) {
+  .modal-card {
+    width: 18%;
+  }
+}
+@media (max-width: 600px) {
+  .profile-modal-card {
+    margin-top: 33px !important;
+  }
+  .modal-card-head h3 {
+    font-size: 13px;
+  }
+  .modal-card {
+    padding: 8px;
+  }
+}
+@media (max-width: 450px) {
+  .modal-card {
+    width: 30%;
+  }
+}
+/* Card modal */

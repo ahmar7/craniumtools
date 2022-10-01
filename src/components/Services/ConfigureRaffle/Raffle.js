@@ -4,22 +4,19 @@ import { Link } from "react-router-dom";
 import "./rafel.css";
 import { Cross, Delete, Edit, Img, Plus } from "../../../utils/allImgs";
 const Raffle = () => {
-  const [modal, setModal] = useState(false); 
-const [isActive, setIsActive] = useState(false);
+  const [modal, setModal] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
- 
-const toggleModal = () => {
-  setModal(true);
+  const toggleModal = () => {
+    setModal(true);
 
-  setIsActive(false);
+    setIsActive(false);
   };
-const closeModal = () => {
-  
-  setIsActive(true);
-  setTimeout(() => {
+  const closeModal = () => {
+    setIsActive(true);
+    setTimeout(() => {
       setModal(false);
-  }, 300);
-
+    }, 300);
   };
 
   if (modal) {
