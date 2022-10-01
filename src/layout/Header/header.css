@@ -69,9 +69,15 @@ a {
   font-weight: 500;
   border: none;
 }
+.active{
+  color: #435AF2 !important;
+}
 
-
-
+.primary-btn{
+  
+  background-color: #435AF2 !important;
+  color: white;
+}
 @media (max-width:768px) {
   .nav-ul li:nth-child(1) {
     margin-left: 0px;

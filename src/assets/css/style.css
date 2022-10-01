@@ -6,8 +6,8 @@
   font-style: normal;
 }
 .me{
-    margin-left:120px ;
-    margin-right:120px ;
+    margin-left:100px ;
+    margin-right:100px ;
 }
 .mt{
     margin-top: 80px;
@@ -65,6 +65,12 @@ color: #3D3D44;
     .me {
     margin-left: 10px;
     margin-right: 10px;
+}
+.heading-section h3{
+    font-size: 38px;
+}
+.heading-section p{
+    font-size: 14px;
 }
     
 }
