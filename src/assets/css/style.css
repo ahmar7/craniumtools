@@ -1,76 +1,82 @@
 @font-face {
   font-family: "General Sans";
   src: url("../fonts/GeneralSans-Variable.ttf") format("truetype");
-  font-weight:   600;
+  font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
-.me{
-    margin-left:100px ;
-    margin-right:100px ;
-}
-.mt{
-    margin-top: 80px;
-}
-.mb{
-    margin-bottom: 80px;
-} 
-.heading-section h3{
-font-family: 'General Sans';
-font-style: normal;
-font-weight: 600;margin: 0;
-font-size: 48px;
-line-height: 56px;text-align: center;
-letter-spacing: -0.5px;
-color: #141430;
-}
-.underline {
-    position: absolute;
-    width: 60px;
-    margin-top: 12px;
-    margin-bottom:50px;
-    text-align: center; 
-    height: 3px;
-    left: 48.5%;
-    background: #435AF2;
-    color: #435AF2;
-}
-.heading-section p{
-    font-family: 'General Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px; 
-    margin-top:29px;
-text-align: center; 
-color: #3D3D44;
-
-}
-
-@media (max-width:768px) {
-    .me {
-    margin-left: 35px;
-    margin-right: 35px;
+.me {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .mt {
-    margin-top: 50px;
+  margin-top: 80px;
 }
 .mb {
-    margin-bottom: 50px;
+  margin-bottom: 80px;
+}
+.heading-section h3 {
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #141430;
+}
+.underline {
+  position: absolute;
+  width: 60px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  text-align: center;
+  height: 3px;
+  left: 48.5%;
+  background: #435af2;
+  color: #435af2;
+}
+.heading-section p {
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 29px;
+  text-align: center;
+  color: #3d3d44;
 }
 
-    
+@media (max-width: 768px) {
+  .me {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .mt {
+    margin-top: 70px;
+  }
+  .mb {
+    margin-bottom: 70px;
+  }
 }
-@media (max-width:600px) {
-    .me {
+@media (max-width: 600px) {
+  .me {
     margin-left: 10px;
     margin-right: 10px;
-}
-.heading-section h3{
+  }
+  .heading-section h3 {
     font-size: 38px;
-}
-.heading-section p{
+  }
+  .heading-section p {
     font-size: 14px;
+  }
 }
-    
+@media (max-width: 440px) {
+  /* .heading-section p {
+    font-size: 13px;
+  } */
+  .heading-section h3 {
+    font-size: 30px;
+  }
 }

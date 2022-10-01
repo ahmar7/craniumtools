@@ -27,144 +27,144 @@ const Managers = () => {
               <Link to="/">ADD</Link>
             </button>
           </div>
-        </div>
-        <div className="manager-heading heading-bg">
-          <div className="p-25 ">
-            <p>Manager Wallet</p>
+        </div> 
+          <div className="manager-heading heading-bg">
+            <div className="p-25 ">
+              <p>Manager Wallet</p>
+            </div>
+            <div>
+              <p>Manage Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>Delete</p>
+            </div>
           </div>
-          <div>
-            <p>Manage Nickname</p>
+          <div className="manager-heading detail">
+            <div className="p-25 ">
+              <p>Project Name</p>
+            </div>
+            <div>
+              <p>Manager Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>
+                <img src={Delete} alt="" />
+              </p>
+            </div>
           </div>
-          <div className="p-25 ">
-            <p>Delete</p>
+          <div className="manager-heading detail">
+            <div className="p-25 ">
+              <p>Project Name</p>
+            </div>
+            <div>
+              <p>Manager Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>
+                <img src={Delete} alt="" />
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="manager-heading detail">
-          <div className="p-25 ">
-            <p>Project Name</p>
+          <div className="manager-heading detail">
+            <div className="p-25 ">
+              <p>Project Name</p>
+            </div>
+            <div>
+              <p>Manager Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>
+                <img src={Delete} alt="" />
+              </p>
+            </div>
           </div>
-          <div>
-            <p>Manager Nickname</p>
+          <div className="manager-heading detail">
+            <div className="p-25 ">
+              <p>Project Name</p>
+            </div>
+            <div>
+              <p>Manager Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>
+                <img src={Delete} alt="" />
+              </p>
+            </div>
           </div>
-          <div className="p-25 ">
-            <p>
-              <img src={Delete} alt="" />
-            </p>
+          <div className="manager-heading detail">
+            <div className="p-25 ">
+              <p>Project Name</p>
+            </div>
+            <div>
+              <p>Manager Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>
+                <img src={Delete} alt="" />
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="manager-heading detail">
-          <div className="p-25 ">
-            <p>Project Name</p>
+          <div className="manager-heading detail">
+            <div className="p-25 ">
+              <p>Project Name</p>
+            </div>
+            <div>
+              <p>Manager Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>
+                <img src={Delete} alt="" />
+              </p>
+            </div>
           </div>
-          <div>
-            <p>Manager Nickname</p>
+          <div className="manager-heading detail">
+            <div className="p-25 ">
+              <p>Project Name</p>
+            </div>
+            <div>
+              <p>Manager Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>
+                <img src={Delete} alt="" />
+              </p>
+            </div>
           </div>
-          <div className="p-25 ">
-            <p>
-              <img src={Delete} alt="" />
-            </p>
+          <div className="manager-heading detail">
+            <div className="p-25 ">
+              <p>Project Name</p>
+            </div>
+            <div>
+              <p>Manager Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>
+                <img src={Delete} alt="" />
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="manager-heading detail">
-          <div className="p-25 ">
-            <p>Project Name</p>
+          <div className="manager-heading detail">
+            <div className="p-25 ">
+              <p>Project Name</p>
+            </div>
+            <div>
+              <p>Manager Nickname</p>
+            </div>
+            <div className="p-25 ">
+              <p>
+                <img src={Delete} alt="" />
+              </p>
+            </div>
           </div>
-          <div>
-            <p>Manager Nickname</p>
-          </div>
-          <div className="p-25 ">
-            <p>
-              <img src={Delete} alt="" />
-            </p>
-          </div>
-        </div>
-        <div className="manager-heading detail">
-          <div className="p-25 ">
-            <p>Project Name</p>
-          </div>
-          <div>
-            <p>Manager Nickname</p>
-          </div>
-          <div className="p-25 ">
-            <p>
-              <img src={Delete} alt="" />
-            </p>
-          </div>
-        </div>
-        <div className="manager-heading detail">
-          <div className="p-25 ">
-            <p>Project Name</p>
-          </div>
-          <div>
-            <p>Manager Nickname</p>
-          </div>
-          <div className="p-25 ">
-            <p>
-              <img src={Delete} alt="" />
-            </p>
-          </div>
-        </div>
-        <div className="manager-heading detail">
-          <div className="p-25 ">
-            <p>Project Name</p>
-          </div>
-          <div>
-            <p>Manager Nickname</p>
-          </div>
-          <div className="p-25 ">
-            <p>
-              <img src={Delete} alt="" />
-            </p>
-          </div>
-        </div>
-        <div className="manager-heading detail">
-          <div className="p-25 ">
-            <p>Project Name</p>
-          </div>
-          <div>
-            <p>Manager Nickname</p>
-          </div>
-          <div className="p-25 ">
-            <p>
-              <img src={Delete} alt="" />
-            </p>
-          </div>
-        </div>
-        <div className="manager-heading detail">
-          <div className="p-25 ">
-            <p>Project Name</p>
-          </div>
-          <div>
-            <p>Manager Nickname</p>
-          </div>
-          <div className="p-25 ">
-            <p>
-              <img src={Delete} alt="" />
-            </p>
-          </div>
-        </div>
-        <div className="manager-heading detail">
-          <div className="p-25 ">
-            <p>Project Name</p>
-          </div>
-          <div>
-            <p>Manager Nickname</p>
-          </div>
-          <div className="p-25 ">
-            <p>
-              <img src={Delete} alt="" />
-            </p>
-          </div>
-        </div>
-        <div className="manager-heading">
-          <div className="p-25 "></div>
-          <div className="input  p-25">
-            <p>Rows Per Page</p>
-            <p>1-10 of 276</p>
-            <p className="sp"> &lt; </p>
-            <p className="sp">&gt;</p>
-          </div>
-        </div>
+          <div className="manager-heading">
+            <div className="p-25 "></div>
+            <div className="input  p-25">
+              <p>Rows Per Page</p>
+              <p>1-10 of 276</p>
+              <p className="sp"> &lt; </p>
+              <p className="sp">&gt;</p>
+            </div>
+          </div> 
       </div>
     </div>
   );

@@ -4,6 +4,10 @@
   font-display: swap;
   font-style: normal;
 }
+body{
+    font-family: "Proxima Nova";
+
+}
 .manager-wallet {
   margin-top: 50px;
   background: #ffffff;
@@ -14,7 +18,7 @@
 }
 .manager-heading {
   display: flex;
-    border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgb(231, 231, 231);
   align-items: center;
   justify-content: space-between;
   padding: 20px 0 !important;
@@ -40,7 +44,7 @@
   display: inline;
   height: 40px;
   border: 1px solid lightgray;
-  padding: 0 20px;
+  padding: 2px 20px;
 }
 .input button {
   display: inline !important;
@@ -59,12 +63,11 @@
   border: none;
 }
 .heading-bg {
-    border: none !important;
-    background: #435af218;
+  border: none !important;
+  background: #435af218;
 }
-.no-border{
-    
-    border: none !important;
+.no-border {
+  border: none !important;
 }
 .heading-bg div p {
   font-family: "Proxima Nova";
@@ -100,20 +103,71 @@
   color: #141430;
   margin: 0;
 }
-.input p{  font-family: "Proxima Nova";
+.input p {
+  font-family: "Proxima Nova";
 
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 15px;
-letter-spacing: 0.05em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
 
-color: #3D3D44;
-display: inline;
-margin-left: 10px;
-margin-right: 10px;
+  color: #3d3d44;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.sp{
-    cursor: pointer;
-    font-weight: 800;
+.sp {
+  cursor: pointer;
+  font-weight: 800;
+}
+@media (max-width: 1000px) {
+  .input input {
+    font-family: "Proxima Nova";
+    width: 170px;
+    height: 37px;
+
+    padding: 0 20px;
+  }
+  .input button {
+    display: inline !important;
+    padding: 7.5px 17px;
+    background: #000000;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .manager-heading div h3 {
+    font-size: 18px;
+  }
+  .p-25 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .input button {
+    display: inline !important;
+    padding: 7.5px 17px;
+  }
+  .input input {
+    font-family: "Proxima Nova";
+    width: 133px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .input button {
+    display: block !important;
+    padding: 7.5px 17px;
+    margin-right: 0 !important;
+    margin-left: 87px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .detail p {
+    font-size: 13px;
+  }
+  .heading-bg div p {
+    font-size: 13px;
+  }
 }

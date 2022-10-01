@@ -87,8 +87,15 @@ border-radius: 8px;
   }
 }
 @media (min-width:1750px) {
- .c-e-block {
-    width: 280px;
-    height:200px;
+    .c-e-block {
+        width: 280px;
+        height:200px;
+    }
 }
+@media (max-width:600px) {
+
+.c-e-block {
+     
+    width: 245px;
+    height: 153px;}
 }
