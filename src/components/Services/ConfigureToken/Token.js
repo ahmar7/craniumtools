@@ -4,7 +4,7 @@ import { Vector } from "../../../utils/allImgs";
 import "./token.css";
 const Token = () => {
   return (
-    <div className="mb section-bg container-link">
+    <div className="mb section-bg token-config container-link">
       <div className="token-bg tbl-width   ">
         <div className=" no-border">
           <br />

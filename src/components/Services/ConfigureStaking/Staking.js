@@ -3,7 +3,7 @@ import "./staking.css"
 import { Link } from 'react-router-dom';
 const Staking = () => {
     return (
-      <div className="mt container-link   mb">
+      <div className="mt container-link    mb">
         <div className="project-container">
           <div className="project-heading">
             <h3>Configure Staking</h3>

@@ -61,6 +61,10 @@ color: #FFFFFF;
     position: relative;
     left: 10px;
     top: 4px;
+    cursor: pointer;
+}
+.token-config{
+    padding-bottom: 100px !important;
 }
 @media (max-width: 768px) {
   .manager-heading div h3 {

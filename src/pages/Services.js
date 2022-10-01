@@ -1,4 +1,6 @@
 import React from 'react';
+import Auction from '../components/Services/ConfigureAuction/Auction';
+import Raffle from '../components/Services/ConfigureRaffle/Raffle';
 import Staking from '../components/Services/ConfigureStaking/Staking';
 import Token from '../components/Services/ConfigureToken/Token';
 import Project from '../components/Services/NftProjects/Project';
@@ -13,6 +15,8 @@ const Services = () => {
             <ProjectName/>
             <Staking/>
             <Token/>
+            <Raffle/>
+            <Auction/>
         </div>
     );
 }
