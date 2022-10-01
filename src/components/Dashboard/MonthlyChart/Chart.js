@@ -144,11 +144,8 @@ const Chart = () => {
 
 export default Chart;
 
-
-
-
-
-{/* <div className="manager-heading heading-bg">
+{
+  /* <div className="manager-heading heading-bg">
             <div className="p-25 ">
               <p>Month</p>
             </div>
@@ -408,4 +405,5 @@ export default Chart;
             <div className="p-25 ">
               <p>X</p>
             </div>
-          </div> */}
+          </div> */
+}

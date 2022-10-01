@@ -1,5 +1,7 @@
 import Logo from "../../assets/img/Logo.png";
-import Delete from "../../assets/img/delete.png";
+import Delete from "../../assets/img/delete.svg";
+import Vector from "../../assets/img/Vector.svg";
+import Edit from "../../assets/img/edit.svg";
 import HeaderImg from "../../assets/img/Header Image.png";
 import Icon1 from "../../assets/img/eIcons/PBaaS.svg";
 import Icon2 from "../../assets/img/eIcons/VerusID.svg";
@@ -14,5 +16,5 @@ import ChartIcon3 from "../../assets/img/dashboardIcons/icon (2).svg";
  
 
 ///////////////////////////////////////////////////// Collection Images
-export { Logo, HeaderImg, Icon1,Icon2,Icon3,Icon4, Discord,Twitter, Delete, ChartIcon1, ChartIcon2,ChartIcon3,ChartIcon4 };
+export { Logo, HeaderImg, Icon1,Icon2,Icon3,Icon4, Discord,Twitter, Delete, ChartIcon1, ChartIcon2,ChartIcon3,ChartIcon4,Edit, Vector };
  

@@ -1,6 +1,6 @@
 import React from "react";
 import { Logo } from "../../utils/allImgs";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../Header/header.css";
 const Header = () => {
   return (
@@ -9,21 +9,21 @@ const Header = () => {
         <div className="left-colmn">
           <ul className="nav-ul nav-2">
             <li>
-              <Link to="">
+              <a href="#">
                 <img src={Logo} alt="" />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="">Manage</Link>
-            </li>
-            <li className="active">
-              <Link to="">Dashboard</Link>
+              <NavLink to="/manage">Manage</NavLink>
             </li>
             <li>
-              <Link to="">Services</Link>
+              <NavLink to="/dashboard">Dashboard</NavLink>
             </li>
             <li>
-              <Link to="">Referral</Link>
+              <NavLink to="/services">Services</NavLink>
+            </li>
+            <li>
+              <NavLink to="/referral">Referral</NavLink>
             </li>
           </ul>
         </div>

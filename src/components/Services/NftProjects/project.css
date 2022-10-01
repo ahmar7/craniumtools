@@ -1,0 +1,12 @@
+.delete-icon,
+.edit-icon{
+    display: inline;
+}
+.action-btn{
+    padding-right: 50px !important;
+}
+@media (max-width:600px) {
+   .action-btn{
+    padding-right: 35px !important;
+} 
+}

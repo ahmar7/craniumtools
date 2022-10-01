@@ -1,0 +1,117 @@
+.project-container {
+  margin-top: 50px !important;
+  margin: 0 auto;
+  width: 60vw; 
+
+  background: #ffffff;
+  box-shadow: 0px 4px 26px -11px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 40px 50px !important;
+}
+
+.project-heading h3 {
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  font-size: 36px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #141430;
+}
+.underline {
+  position: absolute;
+  width: 60px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  text-align: center;
+  height: 3px;
+  left: 48.5%;
+  background: #435af2;
+  color: #435af2;
+}
+.project-heading p {
+  font-family: "General Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 29px;
+  text-align: center;
+  color: #3d3d44;
+}
+.input-container{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.project-input {
+  display: block;
+  margin-top: 10px;
+  padding: 19px 18px;
+
+  width: 93%; 
+  outline: none;
+
+  background: #ffffff;
+  border: 1px solid #e1e0e2;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.project-form {
+  margin: 0 auto;
+  padding-top: 30px !important;
+}
+.project-form label {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  color: #141430;
+}
+.submit-btn{
+    display: flex;
+    justify-content:right;
+    margin-top: 40px !important;
+    margin-right: 20px;
+}
+@media (min-width:1550px) {
+    .submit-btn{
+        margin-right: 32px;
+    }
+}
+@media (min-width:1760px) {
+    .submit-btn{margin-right: 42px;}
+}
+@media (min-width:1980px) {
+    .submit-btn{
+        margin-right: 50px;
+    }
+    
+}
+@media (max-width: 1000px) {
+    .submit-btn{
+        margin-right: 0;
+    }
+}
+@media (max-width: 600px) {
+  .project-heading h3 {
+    font-size: 25px;
+  }
+  .project-heading p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 440px) {
+  .project-heading h3 {
+    font-size: 20px;
+  }
+}

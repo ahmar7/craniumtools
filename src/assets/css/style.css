@@ -47,7 +47,11 @@
   text-align: center;
   color: #3d3d44;
 }
-
+.section-bg{
+    background-color: #F9FAFF;
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;
+}
 @media (max-width: 768px) {
   .me {
     margin-left: 35px;

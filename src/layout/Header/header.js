@@ -26,7 +26,7 @@ const Header = () => {
           </div>
           <div className="right-colmn">
             <button className="panel-btn">
-              <Link to="dashboard">Project Panel</Link>
+              <Link to="/dashboard">Project Panel</Link>
             </button>
           </div>
         </div>

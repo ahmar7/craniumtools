@@ -1,0 +1,68 @@
+.manager-heading {
+  display: flex;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 !important;
+}
+
+.manager-heading div h3 {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+
+  text-transform: capitalize;
+
+  color: #141430;
+}
+.token-bg {
+  margin-top: 50px;
+  background: #ffffff;  
+  /* width: 90vw;
+  height: 100vh; */
+}
+.bold-text{
+    font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: bolder;
+font-size: 18px;
+line-height: 18px; 
+
+
+color: #141430;
+
+}
+.container-btn{
+    width: 91px;
+height: 44px;
+ 
+border: none;
+text-align: center;
+color: white;
+background: #435AF2;
+border-radius: 8px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 
+400;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: -0.5px;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+.vector-img{ 
+    position: relative;
+    left: 10px;
+    top: 4px;
+}
+@media (max-width: 768px) {
+  .manager-heading div h3 {
+    font-size: 18px;
+  }}
