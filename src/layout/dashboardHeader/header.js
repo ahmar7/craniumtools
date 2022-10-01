@@ -28,9 +28,10 @@ const Header = () => {
           </ul>
         </div>
         <div className="right-colmn">
-          <button className="panel-btn primary-btn">
-            <Link to="/">Logout</Link>
-          </button>
+          <Link to="/">
+            {" "}
+            <button className="panel-btn primary-btn">Logout</button>
+          </Link>
         </div>
       </div>
     </div>

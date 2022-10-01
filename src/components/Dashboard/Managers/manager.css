@@ -4,9 +4,8 @@
   font-display: swap;
   font-style: normal;
 }
-body{
-    font-family: "Proxima Nova";
-
+body {
+  font-family: "Proxima Nova";
 }
 .manager-wallet {
   margin-top: 50px;
@@ -154,15 +153,31 @@ body{
     padding: 0 10px;
   }
 }
-
+@media (max-width: 500px) {
+  .chart-nft h3 {
+    font-size: 15px !important;
+  }
+  .nft-btn {
+    display: inline !important;
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+  }
+  .chart-right input {
+    height: 28px !important;
+    width: 110px;font-size: 12px;
+  }
+}
 @media (max-width: 440px) {
-  .input button {
-    display: block !important;
-    padding: 7.5px 17px;
-    margin-right: 0 !important;
-    margin-left: 87px;
-    text-align: center;
-    margin-top: 10px;
+  .nft-btn {
+    margin-left: 4px !important;
+  }
+  .chart-nft,
+  .chart-right {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+  .chart-nft h3 {
+    font-size: 13px !important;
   }
   .detail p {
     font-size: 13px;

@@ -72,9 +72,14 @@
   .heading-section h3 {
     font-size: 38px;
   }
-  .heading-section p {
+  .heading-section p,.project-heading p {
     font-size: 14px;
+    margin: 0;
+    margin-top: 20px !important;
   }
+  .underline {
+   
+    margin-top: 3px !important}
 }
 @media (max-width: 440px) {
   /* .heading-section p {
@@ -83,4 +88,9 @@
   .heading-section h3 {
     font-size: 30px;
   }
-}
+  .underline {
+    position: absolute;
+    width: 60px;  
+    
+    left: 44% !important;
+}}

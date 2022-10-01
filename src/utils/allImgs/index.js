@@ -1,6 +1,7 @@
 import Logo from "../../assets/img/Logo.png";
 import Delete from "../../assets/img/delete.svg";
 import Img from "../../assets/img/img.png";
+import Cross from "../../assets/img/cross.png";
 import Plus from "../../assets/img/plus 1.svg";
 import Vector from "../../assets/img/Vector.svg";
 import Edit from "../../assets/img/edit.svg";
@@ -15,8 +16,25 @@ import ChartIcon1 from "../../assets/img/dashboardIcons/icon.svg";
 import ChartIcon4 from "../../assets/img/dashboardIcons/icon (3).svg";
 import ChartIcon2 from "../../assets/img/dashboardIcons/icon (1).svg";
 import ChartIcon3 from "../../assets/img/dashboardIcons/icon (2).svg";
- 
 
 ///////////////////////////////////////////////////// Collection Images
-export { Logo, HeaderImg, Icon1,Icon2,Icon3,Icon4, Discord,Twitter, Delete, ChartIcon1, ChartIcon2,ChartIcon3,ChartIcon4,Edit, Vector , Plus, Img};
- 
+export {
+  Logo,
+  HeaderImg,
+  Icon1,
+  Icon2,
+  Icon3,
+  Icon4,
+  Discord,
+  Twitter,
+  Delete,
+  ChartIcon1,
+  ChartIcon2,
+  ChartIcon3,
+  ChartIcon4,
+  Edit,
+  Vector,
+  Plus,
+  Img,
+  Cross,
+};

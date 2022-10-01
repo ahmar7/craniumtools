@@ -16,12 +16,12 @@ const Project = () => {
         </div>
         <div className="manager-wallet me  ">
           <div className="manager-heading no-border">
-            <div className="p-25">
+            <div className="p-25 chart-nft">
               <h3>Manage NFT Projects</h3>
             </div>
-            <div className="input  p-25">
+            <div className="input chart-right  p-25">
               <input placeholder="Search Project Here" type="text" />
-              <button className="panel-btn primary-btn">
+              <button className="panel-btn primary-btn nft-btn">
                 <Link to="/">ADD</Link>
               </button>
             </div>
