@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./auction.css";
 
 import { Cross, Delete, Edit, Img, Plus } from "../../../utils/allImgs";
+import { Link } from "react-router-dom";
+import "./auction.css";
 const Auction = () => {
   const [modal, setModal] = useState(false);
   const [isActive, setIsActive] = useState(false);
@@ -33,11 +33,7 @@ const Auction = () => {
       setNftModal(false);
     }, 300);
   };
-  if (modal) {
-    document.body.classList.add("active-modal");
-  } else {
-    document.body.classList.remove("active-modal");
-  }
+ 
   if (modal || nftmodal) {
     document.body.classList.add("active-modal");
   } else {

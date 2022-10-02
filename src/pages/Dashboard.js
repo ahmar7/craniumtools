@@ -2,7 +2,8 @@ import React from "react";
 import Managers from "../components/Dashboard/Managers/Managers";
 import Chart from "../components/Dashboard/StaticChart/Chart";
 import MonthlyChart from "../components/Dashboard/MonthlyChart/Chart";
-import Header from "../layout/dashboardHeader/header";
+import Header from "../layout/Header/dashboardHeader/header";
+
 import Top from "../components/GoToTop/Top";
 
 const Dashboard = () => {

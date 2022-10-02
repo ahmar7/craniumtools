@@ -7,6 +7,12 @@ import {
   Link,
   Routes,
 } from "react-router-dom";
+import Configurationauction from "../pages/Configuration/Configurationauction";
+import Configuration from "../pages/Configuration/Configurationproject";
+import Configurationraffle from "../pages/Configuration/Configurationraffle";
+import Configurationsetting from "../pages/Configuration/Configurationsetting";
+import Configurationstaking from "../pages/Configuration/Configurationstaking";
+import Configurationtoken from "../pages/Configuration/Configurationtoken";
 import Configure from "../pages/Configure";
 import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
@@ -23,6 +29,24 @@ const Routerapp = () => {
           <Route path="services" element={<Services />} />
           <Route path="manage" element={<Manage />} />
           <Route path="configure" element={<Configure />} />
+          <Route path="configuration/project" element={<Configuration />} />
+          <Route
+            path="configuration/auction"
+            element={<Configurationauction />}
+          />
+          <Route
+            path="configuration/raffle"
+            element={<Configurationraffle />}
+          />
+          <Route
+            path="configuration/staking"
+            element={<Configurationstaking />}
+          />
+          <Route
+            path="configuration/settings"
+            element={<Configurationsetting />}
+          />
+          <Route path="configuration/token" element={<Configurationtoken />} />
         </Routes>
       </Router>
     </div>

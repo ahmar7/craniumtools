@@ -1,7 +1,7 @@
 import React from "react";
 import Top from "../components/GoToTop/Top";
 import Launch from "../components/Manage/Launch/launch";
-import Header from "../layout/dashboardHeader/header";
+import Header from "../layout/Header/dashboardHeader/header";
 
 const Manage = () => {
   return (

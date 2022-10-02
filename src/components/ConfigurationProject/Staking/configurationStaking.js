@@ -1,9 +1,8 @@
 import React from "react";
-import "./staking.css";
 import { Link } from "react-router-dom";
-const Staking = () => {
+const ConfigurationStaking = () => {
   return (
-    <div className="mt container-link    mb">
+    <div className="   section-bg side-blocks       ">
       <div className="project-container">
         <div className="project-heading">
           <h3>Configure Staking</h3>
@@ -65,4 +64,4 @@ const Staking = () => {
   );
 };
 
-export default Staking;
+export default ConfigurationStaking;

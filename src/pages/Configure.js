@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../layout/dashboardHeader/header";
+import Header from "../layout/Header/dashboardHeader/header";
 import Configuration from "../components/Configure/configure";
 import Top from "../components/GoToTop/Top";
 

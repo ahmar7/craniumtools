@@ -4,6 +4,20 @@ import { Logo } from "../../utils/allImgs";
 import { Link, NavLink } from "react-router-dom";
 import "./header.css";
 const Header = () => {
+  const [sideactive, setSideactive] = useState(false);
+
+  const toggleBar = () => {
+    setSideactive(true);
+  };
+  const closeBar = () => {
+    setSideactive(false);
+  };
+
+  if (sideactive) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
   window.addEventListener("scroll", function () {
     let header = this.document.querySelector("#header");
 
@@ -17,7 +31,10 @@ const Header = () => {
     <div id="header" className="main-container ">
       <div className="header me">
         <div className="left-colmn">
-          <ul className="nav-ul">
+          <div onClick={toggleBar} className="mbl-view">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul className="nav-ul  desk-view">
             <li>
               <Link to="/">
                 <img src={Logo} alt="" />

@@ -1,53 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./configure.css";
-const Configure = () => {
+const ConfigurationProject = () => {
   return (
-    <div className=" pt pm section-bg">
-      {" "}
+    <div className="pname  section-bg side-blocks  ">
       <div className="project-container">
         <div className="project-heading">
-          <h3>Set-Up Your Page</h3>
+          <h3>Configure Project</h3>
           <span class="underline"></span>
-          <p>
-            Please make sure you are signed in with the correct wallet before
-            proceeding. Having Issues? <br /> Reach out to us on Discord to
-            assist with the matter!
-          </p>
+          <p>Configure the projects socials below!</p>
         </div>
         <form className="project-form" action="">
           <div className="input-container">
-            <label>Project Name | 100 Characters</label>
+            <label>Twitter URL</label>
             <input
               type="text"
-              placeholder="Project Name"
+              placeholder="Twitter URL"
               required
               className="project-input"
             />
           </div>
           <div className="input-container">
-            <label>PFP URL</label>
+            <label>Discord URL</label>
             <input
               type="text"
-              placeholder="PFP URL"
+              placeholder="Discord URL"
               required
               className="project-input"
             />
           </div>
-          <div className="input-container ic">
-            <label>Staking Page URL</label>
+          <div className="input-container">
+            <label>Description</label>
             <input
               type="text"
-              value="Https://"
+              placeholder="Description"
               required
               className="project-input"
             />
-            <span className="domain">.cranium.io</span>
           </div>
-          <br />
-          <div className=" ">
+          <div className="submit-btn">
             <button className="panel-btn primary-btn">
-              <Link to="/configuration/project">Launch Page</Link>
+              <Link to="#">Apply Changes</Link>
             </button>
           </div>
         </form>
@@ -56,4 +48,4 @@ const Configure = () => {
   );
 };
 
-export default Configure;
+export default ConfigurationProject;

@@ -1,7 +1,7 @@
 import React from "react";
-import { Logo } from "../../utils/allImgs";
+import { Logo } from "../../../utils/allImgs";
 import { Link, NavLink } from "react-router-dom";
-import "../Header/header.css";
+import "../header.css";
 const Header = () => {
   window.addEventListener("scroll", function () {
     let header = this.document.querySelector("#header");

@@ -38,6 +38,10 @@
   background: #435af2;
   color: #435af2;
 }
+.btn-center {
+  margin: 0 auto !important;
+  margin-top: 20px !important;
+}
 .heading-section p {
   font-family: "General Sans";
   font-style: normal;
