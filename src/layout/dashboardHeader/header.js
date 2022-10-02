@@ -18,9 +18,9 @@ const Header = () => {
         <div className="left-colmn">
           <ul className="nav-ul nav-2">
             <li>
-              <a href="#">
+              <NavLink to="/">
                 <img src={Logo} alt="" />
-              </a>
+              </NavLink>
             </li>
             <li>
               <NavLink to="/manage">Manage</NavLink>

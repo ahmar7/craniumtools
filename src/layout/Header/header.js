@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { Logo } from "../../utils/allImgs";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./header.css";
 const Header = () => {
   window.addEventListener("scroll", function () {
@@ -19,7 +19,7 @@ const Header = () => {
         <div className="left-colmn">
           <ul className="nav-ul">
             <li>
-              <Link to="">
+              <Link to="/">
                 <img src={Logo} alt="" />
               </Link>
             </li>
