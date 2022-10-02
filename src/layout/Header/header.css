@@ -14,6 +14,23 @@ a {
   text-decoration: none;
   color: unset;
 }
+.sticky {
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 99;
+  animation: navdown 0.5s both !important;
+}
+@keyframes navdown {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -121,6 +138,9 @@ a {
     font-size: 13px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .sticky {
+    padding-bottom: 15px !important;
   }
 }
 

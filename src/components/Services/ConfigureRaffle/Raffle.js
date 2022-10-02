@@ -96,9 +96,7 @@ const Raffle = () => {
             </div>
 
             <div className="raffle-btn ">
-              <button onClick={toggleModal} className="panel-btn primary-btn">
-                Create Raffle
-              </button>
+              <button className="panel-btn primary-btn">Create Raffle</button>
             </div>
           </div>
         </form>
@@ -111,7 +109,12 @@ const Raffle = () => {
               <h3>NFT Name 1</h3>
             </div>
             <div className="img-side">
-              <img className="card-edit" src={Edit} alt="" />
+              <img
+                className="card-edit"
+                src={Edit}
+                onClick={toggleModal}
+                alt=""
+              />
               <img className="card-delete" src={Delete} alt="" />
             </div>
           </div>
@@ -126,7 +129,12 @@ const Raffle = () => {
               <h3>NFT Name 1</h3>
             </div>
             <div className="img-side">
-              <img className="card-edit" src={Edit} alt="" />
+              <img
+                className="card-edit"
+                src={Edit}
+                onClick={toggleModal}
+                alt=""
+              />
               <img className="card-delete" src={Delete} alt="" />
             </div>
           </div>
@@ -141,7 +149,12 @@ const Raffle = () => {
               <h3>NFT Name 1</h3>
             </div>
             <div className="img-side">
-              <img className="card-edit" src={Edit} alt="" />
+              <img
+                className="card-edit"
+                src={Edit}
+                onClick={toggleModal}
+                alt=""
+              />
               <img className="card-delete" src={Delete} alt="" />
             </div>
           </div>
@@ -156,7 +169,12 @@ const Raffle = () => {
               <h3>NFT Name 1</h3>
             </div>
             <div className="img-side">
-              <img className="card-edit" src={Edit} alt="" />
+              <img
+                className="card-edit"
+                src={Edit}
+                onClick={toggleModal}
+                alt=""
+              />
               <img className="card-delete" src={Delete} alt="" />
             </div>
           </div>
@@ -171,7 +189,12 @@ const Raffle = () => {
               <h3>NFT Name 1</h3>
             </div>
             <div className="img-side">
-              <img className="card-edit" src={Edit} alt="" />
+              <img
+                className="card-edit"
+                src={Edit}
+                onClick={toggleModal}
+                alt=""
+              />
               <img className="card-delete" src={Delete} alt="" />
             </div>
           </div>
@@ -186,7 +209,12 @@ const Raffle = () => {
               <h3>NFT Name 1</h3>
             </div>
             <div className="img-side">
-              <img className="card-edit" src={Edit} alt="" />
+              <img
+                className="card-edit"
+                src={Edit}
+                onClick={toggleModal}
+                alt=""
+              />
               <img className="card-delete" src={Delete} alt="" />
             </div>
           </div>
@@ -201,7 +229,12 @@ const Raffle = () => {
               <h3>NFT Name 1</h3>
             </div>
             <div className="img-side">
-              <img className="card-edit" src={Edit} alt="" />
+              <img
+                className="card-edit"
+                src={Edit}
+                onClick={toggleModal}
+                alt=""
+              />
               <img className="card-delete" src={Delete} alt="" />
             </div>
           </div>
@@ -216,7 +249,12 @@ const Raffle = () => {
               <h3>NFT Name 1</h3>
             </div>
             <div className="img-side">
-              <img className="card-edit" src={Edit} alt="" />
+              <img
+                className="card-edit"
+                src={Edit}
+                onClick={toggleModal}
+                alt=""
+              />
               <img className="card-delete" src={Delete} alt="" />
             </div>
           </div>

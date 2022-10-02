@@ -21,22 +21,18 @@ body.active-modal {
 }
 .modal {
   animation: showdown 0.3s both;
+  z-index: 9999999999;
 }
-.modalup{
-    
-    animation: hideup 0.3s both !important;
-    
+.modalup {
+  animation: hideup 0.3s both !important;
 }
 .overlay {
-    background:rgba(26, 27, 28, 0.12);
-    
-    animation: overlaydown 0.3s both !important;
-    
+  background: rgba(26, 27, 28, 0.12);
+
+  animation: overlaydown 0.3s both !important;
 }
 .overlayup {
-    animation: overlayup 0.3s both !important;
-  
-
+  animation: overlayup 0.3s both !important;
 }
 .modal-content {
   position: relative;
@@ -46,29 +42,28 @@ body.active-modal {
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background: white;  */
-  
 }
 
 .close-modal {
   position: absolute;
   top: -15px;
   cursor: pointer;
-  right: -15px; 
+  right: -15px;
 }
 /* Modal Content */
 .project-modal {
-    position: relative;
+  position: relative;
   margin-top: 40px !important;
   margin: 0 auto;
   width: 60vw;
-height: auto;
+  height: auto;
   background: #ffffff;
   box-shadow: 0px 4px 26px -11px rgba(0, 0, 0, 0.5);
   border-radius: 18px;
   padding: 15px 50px !important;
 }
-.modal-form{
-    margin-right: 35px;
+.modal-form {
+  margin-right: 35px;
 }
 .project-heading h3 {
   font-family: "General Sans";
@@ -80,7 +75,7 @@ height: auto;
   text-align: center;
   letter-spacing: -0.5px;
   color: #141430;
-} 
+}
 .project-heading p {
   font-family: "General Sans";
   font-style: normal;
@@ -130,29 +125,28 @@ height: auto;
 .submit-btn {
   display: flex;
   justify-content: right;
-  margin-top: 40px !important; 
+  margin-top: 40px !important;
 }
-.inline-field input{
-display: inline !important;
-    width:100% !important;
-}.inline-field label{
-    display: inline !important;
+.inline-field input {
+  display: inline !important;
+  width: 100% !important;
 }
-.inline-field{
-    width: 46%;
-    /* display: inline !important; */
+.inline-field label {
+  display: inline !important;
 }
-.field-inline{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+.inline-field {
+  width: 46%;
+  /* display: inline !important; */
 }
-.half-input{
-width: 
-46% !important;
+.field-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
- .raffle-modal-input {
+.half-input {
+  width: 46% !important;
+}
+.raffle-modal-input {
   display: block;
   margin-top: 10px;
   padding: 12px 18px;
@@ -171,49 +165,51 @@ width:
   flex-grow: 0;
 }
 .raffle-modal-inputcontainer {
-  margin-top: 10px;width: 100%;
+  margin-top: 10px;
+  width: 100%;
 
   margin-bottom: 10px;
-}.special .underline{
-        left: 47% !important;
-;
+}
+.special .underline {
+  left: 47% !important;
 }
 @media (max-width: 768px) {
   .project-modal {
     width: 75vw;
   }
-  .field-inline{
-    display: block; 
-   
-}
-.hide{
-    display: none ;
-}
-.raffle-modal-inputcontainer {
+  .field-inline {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .raffle-modal-inputcontainer {
     margin-top: 10px;
-    width: 94%;}
-.inline-field{
+    width: 94%;
+  }
+  .inline-field {
     margin-top: 10px;
-      margin-bottom: 10px;
+    margin-bottom: 10px;
     width: 94%;
   }
   .half-input {
     width: 100% !important;
-}
-.project-modal {
-  margin-top: 20px !important;
-  
-}.modal-form{margin-right: 0;}
-.special .underline{
-        left: 42.5% !important;
-;
-}
+  }
+  .project-modal {
+    margin-top: 20px !important;
+  }
+  .modal-form {
+    margin-right: 0;
+  }
+  .special .underline {
+    left: 42.5% !important;
+  }
 }
 @media (max-width: 600px) {
   .project-form {
     margin: 0 auto;
     padding-top: 15px !important;
-}
+  }
   .project-heading h3 {
     font-size: 25px;
   }
@@ -232,10 +228,11 @@ width:
   }
   .raffle-modal-inputcontainer {
     margin-top: 10px;
-    width: 91%;}
-.inline-field{
+    width: 91%;
+  }
+  .inline-field {
     margin-top: 10px;
-      margin-bottom: 10px;
+    margin-bottom: 10px;
     width: 91%;
   }
 }
@@ -243,12 +240,14 @@ width:
 @media (max-width: 440px) {
   .project-heading h3 {
     font-size: 20px;
-  }.raffle-modal-inputcontainer {
+  }
+  .raffle-modal-inputcontainer {
     margin-top: 10px;
-    width: 89%;}
-.inline-field{
+    width: 89%;
+  }
+  .inline-field {
     margin-top: 10px;
-      margin-bottom: 10px;
+    margin-bottom: 10px;
     width: 89%;
   }
 }
@@ -259,12 +258,12 @@ width:
     top: -100px;
   }
   to {
-    top:  0px;
+    top: 0px;
   }
 }
 @keyframes hideup {
   from {
-    top:  0px;
+    top: 0px;
   }
   to {
     top: -250px;
@@ -272,17 +271,17 @@ width:
 }
 @keyframes overlayup {
   from {
-  background:rgba(26, 27, 28, 0.25)
+    background: rgba(26, 27, 28, 0.25);
   }
   to {
-    background:rgba(26, 27, 28, 0)
+    background: rgba(26, 27, 28, 0);
   }
 }
 @keyframes overlaydown {
-    from {
-      background:rgba(26, 27, 28, 0)
-    }
+  from {
+    background: rgba(26, 27, 28, 0);
+  }
   to {
-  background:rgba(26, 27, 28, 0.25)
+    background: rgba(26, 27, 28, 0.25);
   }
 }

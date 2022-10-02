@@ -15,6 +15,7 @@
 .mb {
   margin-bottom: 80px;
 }
+
 .heading-section h3 {
   font-family: "General Sans";
   font-style: normal;
@@ -47,10 +48,10 @@
   text-align: center;
   color: #3d3d44;
 }
-.section-bg{
-    background-color: #F9FAFF;
-    padding-top: 30px !important;
-    padding-bottom: 50px !important;
+.section-bg {
+  background-color: #f9faff;
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
 }
 @media (max-width: 768px) {
   .me {
@@ -72,14 +73,15 @@
   .heading-section h3 {
     font-size: 38px;
   }
-  .heading-section p,.project-heading p {
+  .heading-section p,
+  .project-heading p {
     font-size: 14px;
     margin: 0;
     margin-top: 20px !important;
   }
   .underline {
-   
-    margin-top: 3px !important}
+    margin-top: 3px !important;
+  }
 }
 @media (max-width: 440px) {
   /* .heading-section p {
@@ -90,7 +92,8 @@
   }
   .underline {
     position: absolute;
-    width: 60px;  
-    
+    width: 60px;
+
     left: 44% !important;
-}}
+  }
+}
