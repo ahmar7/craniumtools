@@ -18,8 +18,22 @@ const Raffle = () => {
       setModal(false);
     }, 300);
   };
+  // Nft Modal
+  const [nftmodal, setNftModal] = useState(false);
+  const [nftisActive, setNftIsActive] = useState(false);
 
-  if (modal) {
+  const toggleNft = () => {
+    setNftModal(true);
+
+    setNftIsActive(false);
+  };
+  const closeNft = () => {
+    setNftIsActive(true);
+    setTimeout(() => {
+      setNftModal(false);
+    }, 300);
+  };
+  if (modal || nftmodal) {
     document.body.classList.add("active-modal");
   } else {
     document.body.classList.remove("active-modal");
@@ -34,18 +48,12 @@ const Raffle = () => {
         </div>
         <form className="raffle-form" action="#">
           <div className="colmn-left raffle-block">
-            <label htmlFor="upload">
+            <label>
               Choose NFT
               <br />
-              <div className="image-picker">
+              <div onClick={toggleNft} className="image-picker">
                 <img src={Plus} alt="" />
               </div>
-              <input
-                required
-                type="file"
-                id="upload"
-                style={{ display: "none" }}
-              />
             </label>
           </div>
           <div className="colmn-right raffle-block">
@@ -344,6 +352,62 @@ const Raffle = () => {
                 </div>
               </form>
               <div className="close-modal" onClick={closeModal}>
+                <img src={Cross} />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {nftmodal && (
+        <div className={nftisActive ? "modalup modal" : "modal"}>
+          <div
+            onClick={toggleNft}
+            className={nftisActive ? "overlayup overlay" : "overlay"}
+          ></div>
+          <div className="modal-content">
+            <div className="project-modal">
+              <div className="project-heading special">
+                <h3>Choose Raffle NFT</h3>
+                <span class="underline"></span>
+                <p>
+                  Please make sure you are signed in with the correct wallet
+                  before proceeding. Having Issues? <br /> Reach out to us on
+                  Discord to assist with the matter!
+                </p>
+              </div>
+              <div className="profile-modal-card">
+                <div className="modal-card">
+                  <img className="dp" src={Img} alt="" />
+                  <div className="modal-card-head">
+                    <div>
+                      <h3>NFT Name 1</h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="modal-card">
+                  <img className="dp" src={Img} alt="" />
+                  <div className="modal-card-head">
+                    <div>
+                      <h3>NFT Name 1</h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="modal-card">
+                  <img className="dp" src={Img} alt="" />
+                  <div className="modal-card-head">
+                    <div>
+                      <h3>NFT Name 1</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>{" "}
+              <br />
+              <div className="  ">
+                <button onClick={closeNft} className="panel-btn primary-btn">
+                  Select NFT
+                </button>
+              </div>
+              <div className="close-modal" onClick={closeNft}>
                 <img src={Cross} />
               </div>
             </div>
