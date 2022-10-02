@@ -79,14 +79,14 @@ const Launch = () => {
                 <h3>Fortmatic</h3>
               </div>
             </div>
-            <div className="wallet-row">
+            <div className="wallet-row no-border">
               <h3 className="show-more">Show More Options</h3>
             </div>
           </div>
           <div className="wallet-left ml">
             <div className="wallet-header">
               <div className="header-inner">
-                <h3>Wallet Disconnect</h3>
+                <h3>Rate : 0 / Day</h3>
               </div>
               <div className="header-inner">
                 <h5>Balance</h5>
@@ -117,7 +117,7 @@ const Launch = () => {
                 <h3>Fortmatic</h3>
               </div>
             </div>
-            <div className="wallet-row">
+            <div className="wallet-row no-border">
               <h3 className="show-more">Show More Options</h3>
             </div>
           </div>

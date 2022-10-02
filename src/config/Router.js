@@ -7,6 +7,7 @@ import {
   Link,
   Routes,
 } from "react-router-dom";
+import Configure from "../pages/Configure";
 import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
 import Manage from "../pages/Manage";
@@ -21,6 +22,7 @@ const Routerapp = () => {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="services" element={<Services />} />
           <Route path="manage" element={<Manage />} />
+          <Route path="configure" element={<Configure />} />
         </Routes>
       </Router>
     </div>

@@ -124,6 +124,9 @@
   text-align: center;
   margin: 0 auto;
 }
+.bring-up .no-border {
+  border-radius: 20px;
+}
 @media (max-width: 1000px) {
   .header-inner h3,
   .row-inner h3,
