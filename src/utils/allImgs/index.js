@@ -16,6 +16,10 @@ import ChartIcon1 from "../../assets/img/dashboardIcons/icon.svg";
 import ChartIcon4 from "../../assets/img/dashboardIcons/icon (3).svg";
 import ChartIcon2 from "../../assets/img/dashboardIcons/icon (1).svg";
 import ChartIcon3 from "../../assets/img/dashboardIcons/icon (2).svg";
+import Metamask from "../../assets/img/walletIcons/metamask.svg";
+import Coinbase from "../../assets/img/walletIcons/coinbase.svg";
+import Walletconnect from "../../assets/img/walletIcons/walletconnect.svg";
+import Fortmatic from "../../assets/img/walletIcons/fortmatic.svg";
 
 ///////////////////////////////////////////////////// Collection Images
 export {
@@ -37,4 +41,8 @@ export {
   Plus,
   Img,
   Cross,
+  Metamask,
+  Coinbase,
+  Walletconnect,
+  Fortmatic,
 };
