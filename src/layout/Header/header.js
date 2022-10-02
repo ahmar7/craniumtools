@@ -19,7 +19,7 @@ const Header = () => {
     document.body.classList.remove("active-modal");
   }
   window.addEventListener("scroll", function () {
-    let header = this.document.querySelector("#header");
+    let header = this.document.querySelector("#header2");
 
     if (window.scrollY > 100) {
       header.classList.add("sticky");
@@ -28,25 +28,31 @@ const Header = () => {
     }
   });
   return (
-    <div id="header" className="main-container ">
+    <div id="header2" className="main-container ">
+      <div onClick={closeBar} className={sideactive ? " overlay " : ""}></div>
       <div className="header me">
         <div className="left-colmn">
           <div onClick={toggleBar} className="mbl-view">
             <i class="fa-solid fa-bars"></i>
           </div>
-          <ul className="nav-ul  desk-view">
-            <li>
-              <Link to="/">
+          <ul className={sideactive ? "nav-ul  mbl-nav" : "nav-ul desk-view"}>
+            <li className="close-side-bar">
+              <div onClick={closeBar}>
+                <i class="fa-sharp fa-solid fa-x"></i>
+              </div>
+            </li>
+            <li className="logo-bar">
+              <Link onClick={closeBar} to="/">
                 <img src={Logo} alt="" />
               </Link>
             </li>
-            <li>
+            <li onClick={closeBar} className="others">
               <Link to="">Home</Link>
             </li>
-            <li>
+            <li onClick={closeBar} className="others">
               <Link to="">Experiments</Link>
             </li>
-            <li>
+            <li onClick={closeBar} className="others">
               <Link to="">Contacts</Link>
             </li>
           </ul>

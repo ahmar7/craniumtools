@@ -38,7 +38,7 @@ const Header = () => {
   }
   return (
     <>
-      <div onClick={toggleBar} className={sideactive ? " overlay " : ""}></div>
+      <div onClick={closeBar} className={sideactive ? " overlay " : ""}></div>
       <div className={sideactive ? " show-it   main-side" : "main-side "}>
         <div onClick={closeBar} className="close-bar">
           <i class="fa-sharp fa-solid fa-x"></i>

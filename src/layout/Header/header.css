@@ -75,8 +75,6 @@ a {
   align-items: flex-start;
   padding: 14px 28px;
   gap: 10px;
-  /* width: 154px;
-  height: 50px; */
   background: #000000;
   border-radius: 8px;
   color: white;
@@ -163,8 +161,9 @@ a {
 .show-it {
   display: block !important;
 }
-.close-bar {
-  display: none;
+.close-bar,
+.close-side-bar {
+  display: none !important;
 }
 .desk-view {
   display: flex;
@@ -213,7 +212,7 @@ a {
   }
   .close-bar {
     margin-left: 20px;
-    display: block;
+    display: block !important;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -251,6 +250,9 @@ a {
 }
 /* Side BAr */
 @media (max-width: 768px) {
+  .others {
+    text-transform: uppercase;
+  }
   .mbl-view {
     display: block;
     margin-left: 30px !important;
@@ -259,9 +261,48 @@ a {
   .desk-view {
     display: none !important;
   }
+  .close-side-bar {
+    display: block !important;
+    margin-top: 35px;
+    margin-bottom: 28px;
+  }
+  .close-side-bar div i {
+    font-size: 30px;
+  }
+  .logo-bar {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  .mbl-nav {
+    animation: showbar 0.3s both !important;
+    position: fixed;
+    margin: 0 auto;
+    text-align: center;
+    /* display: block; */
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    padding: 0 12px;
+  }
+  .nav-ul li {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #141430;
+  }
+  .others {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   .nav-ul li:nth-child(1) {
     margin-left: 0px;
-    margin-right: 15px !important;
+    margin-right: 0px !important;
   }
   .header.me {
     padding: 20px 0;
@@ -273,19 +314,16 @@ a {
 
     font-size: 13px;
   }
-  .nav-ul li {
-    font-size: 13px;
-    margin-left: 8px;
-    margin-right: 8px;
-  }
 
-  .nav-ul li:nth-child(1) {
-    margin-left: 0px;
-    margin-right: 12px !important;
+  .mbl-view {
+    margin-left: 5px !important;
   }
 }
 
 @media (max-width: 400px) {
+  .mobile-bar {
+    margin-top: 3px;
+  }
   .header.me {
     padding: 20px 0 5px 0;
   }
@@ -297,28 +335,11 @@ a {
   .nav-ul {
     margin-bottom: 0;
   }
-  .nav-ul li:nth-child(1) {
-    margin-left: 0px;
-    margin-right: 16px !important;
-  }
-  .nav-ul li {
-    font-size: 13px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .sticky {
+
+  .header.me {
     padding-bottom: 15px !important;
   }
 }
 
 @media (max-width: 360px) {
-  .nav-ul li:nth-child(1) {
-    margin-left: 0px;
-    margin-right: 4px !important;
-  }
-  .nav-ul li {
-    font-size: 13px;
-    margin-left: 8px;
-    margin-right: 8px;
-  }
 }
