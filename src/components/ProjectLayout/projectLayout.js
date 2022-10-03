@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Layoutbg,
   Dp,
@@ -11,6 +12,8 @@ const ProjectLayout = () => {
   const [auction, setAuction] = useState(false);
   const [staking, setStaking] = useState(true);
   const [raffles, setRaffles] = useState(false);
+  const [live, setLive] = useState(true);
+  const [end, setEnd] = useState(false);
   let toggleAuction = () => {
     setAuction(true);
     setRaffles(false);
@@ -25,6 +28,12 @@ const ProjectLayout = () => {
     setStaking(false);
     setAuction(false);
     setRaffles(true);
+  };
+  let goLive = () => {
+    setLive(true);
+  };
+  let goEnd = () => {
+    setLive(false);
   };
 
   return (
@@ -75,63 +84,224 @@ const ProjectLayout = () => {
           RAFFLES
         </button>
       </div>
-      <div className="layout-detail">
-        <div className="staking">
-          <div className="left-block">
-            <div className="blck">
-              <h3>0 Staked</h3>
-              <p>Yours Staked</p>
-            </div>
-            <div className="blck">
-              <h3>0 Staked</h3>
-              <p>Total Staked - 1%</p>
-            </div>
-            <div className="blck">
-              <h3>0.00 $SOL</h3>
-              <p>Daily Rewards</p>
+      <div className={auction ? "active-detail " : " disable-detail "}>
+        <div className="layout-detail">
+          <div className="staking">
+            <div className="left-block"></div>
+            <div className="left-block">
+              <button
+                onClick={goLive}
+                className={
+                  live ? "panel-btn primary-btn " : " panel-btn  no-bg"
+                }
+              >
+                Live
+              </button>
+              <button
+                onClick={goEnd}
+                className={
+                  live ? " panel-btn  no-bg" : "panel-btn primary-btn "
+                }
+              >
+                Ended
+              </button>
             </div>
           </div>
-          <div className="left-block">
-            <button className="panel-btn primary-btn">Select Wallet</button>
-            <button className="panel-btn danger-btn">Select Wallet</button>
+        </div>
+        <div className="profile-modal-card align-left">
+          <div
+            className={
+              live
+                ? "modal-card layout-card active-detail"
+                : " modal-card layout-card disable-detail"
+            }
+          >
+            <img className="dp" src={Img} alt="" />
+            <div className="modal-card-head layout-card-head">
+              <div>
+                <h3>NFT Name 1</h3>
+              </div>
+            </div>
+            <div className="layout-card-btn bg-clr">
+              <p className="light-weight">
+                {" "}
+                <Link to="/auction">AUCTION WINNER</Link>
+              </p>
+              <p className="normal-weight"> 22mwV4x...76</p>
+            </div>
+          </div>
+          <div
+            className={
+              live
+                ? " modal-card layout-card disable-detail"
+                : "modal-card layout-card active-detail"
+            }
+          >
+            <img className="dp" src={Img} alt="" />
+            <div className="modal-card-head  ">
+              <div>
+                <h3>NFT Name 1</h3>
+              </div>
+              <div>
+                <h3 className="royal-blue">1 $SOL</h3>
+              </div>
+            </div>
+            <div className="modal-card-head  ">
+              <div>
+                <p className="no-pad">Highest Bid</p>
+                <h3>100 $PRDX</h3>
+              </div>
+              <div></div>
+            </div>
+            <div className="layout-card-btn bg-change">
+              <p className="light-weight">
+                <Link to="/auction">VIEW AUCTION</Link>
+              </p>
+              <p className="normal-weight"> Ends in 16:06:17</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="profile-modal-card align-left">
-        <div className="modal-card layout-card">
-          <img className="dp" src={Img} alt="" />
-          <div className="modal-card-head layout-card-head">
-            <div>
-              <h3>NFT Name 1</h3>
+      <div className={staking ? "active-detail " : " disable-detail "}>
+        <div className="layout-detail">
+          <div className="staking">
+            <div className="left-block">
+              <div className="blck">
+                <h3>0 Staked</h3>
+                <p>Yours Staked</p>
+              </div>
+              <div className="blck">
+                <h3>0 Staked</h3>
+                <p>Total Staked - 1%</p>
+              </div>
+              <div className="blck">
+                <h3>0.00 $SOL</h3>
+                <p>Daily Rewards</p>
+              </div>
             </div>
-          </div>
-          <div className="layout-card-btn">
-            <button className="danger-btn">Unstake</button>
-            <button className="success-btn">Claim</button>
+            <div className="left-block">
+              <button className="panel-btn primary-btn">Select Wallet</button>
+              <button className="panel-btn danger-btn">Select Wallet</button>
+            </div>
           </div>
         </div>
-        <div className="modal-card layout-card">
-          <img className="dp" src={Img} alt="" />
-          <div className="modal-card-head layout-card-head">
-            <div>
-              <h3>NFT Name 1</h3>
+        <div className="profile-modal-card align-left">
+          <div className="modal-card layout-card">
+            <img className="dp" src={Img} alt="" />
+            <div className="modal-card-head layout-card-head">
+              <div>
+                <h3>NFT Name 1</h3>
+              </div>
+            </div>
+            <div className="layout-card-btn">
+              <button className="danger-btn">Unstake</button>
+              <button className="success-btn">Claim</button>
             </div>
           </div>
-          <div className="layout-card-btn">
-            <button className="danger-btn">Unstake</button>
-            <button className="success-btn">Claim</button>
+          <div className="modal-card layout-card">
+            <img className="dp" src={Img} alt="" />
+            <div className="modal-card-head layout-card-head">
+              <div>
+                <h3>NFT Name 1</h3>
+              </div>
+            </div>
+            <div className="layout-card-btn">
+              <button className="danger-btn">Unstake</button>
+              <button className="success-btn">Claim</button>
+            </div>
+          </div>
+          <div className="modal-card layout-card">
+            <img className="dp" src={Img} alt="" />
+            <div className="modal-card-head layout-card-head">
+              <div>
+                <h3>NFT Name 1</h3>
+              </div>
+            </div>
+            <div className="layout-card-btn">
+              <button className="danger-btn">Unstake</button>
+              <button className="success-btn">Claim</button>
+            </div>
           </div>
         </div>
-        <div className="modal-card layout-card">
-          <img className="dp" src={Img} alt="" />
-          <div className="modal-card-head layout-card-head">
-            <div>
-              <h3>NFT Name 1</h3>
+      </div>
+
+      <div className={raffles ? "active-detail " : " disable-detail "}>
+        <div className="layout-detail">
+          <div className="staking">
+            <div className="left-block"></div>
+            <div className="left-block">
+              <button
+                onClick={goLive}
+                className={
+                  live ? "panel-btn primary-btn " : " panel-btn  no-bg"
+                }
+              >
+                Live
+              </button>
+              <button
+                onClick={goEnd}
+                className={
+                  live ? " panel-btn  no-bg" : "panel-btn primary-btn "
+                }
+              >
+                Ended
+              </button>
             </div>
           </div>
-          <div className="layout-card-btn">
-            <button className="danger-btn">Unstake</button>
-            <button className="success-btn">Claim</button>
+        </div>
+        <div className="profile-modal-card align-left">
+          <div
+            className={
+              live
+                ? "modal-card layout-card active-detail"
+                : " modal-card layout-card disable-detail"
+            }
+          >
+            <img className="dp" src={Img} alt="" />
+            <div className="modal-card-head layout-card-head">
+              <div>
+                <h3>NFT Name 1</h3>
+              </div>
+            </div>
+            <div className="layout-card-btn bg-clr">
+              <p className="light-weight">
+                <Link to="/raffle">RAFFLE winner</Link>
+              </p>
+              <p className="normal-weight"> 22mwV4x...76</p>
+            </div>
+          </div>
+          <div
+            className={
+              live
+                ? " modal-card layout-card disable-detail"
+                : "modal-card layout-card active-detail"
+            }
+          >
+            <img className="dp" src={Img} alt="" />
+            <div className="modal-card-head  ">
+              <div>
+                <h3>NFT Name 1</h3>
+              </div>
+              <div>
+                <h3 className="royal-blue">1 $SOL</h3>
+              </div>
+            </div>
+            <div className="modal-card-head  ">
+              <div>
+                <p className="no-pad">totall tickets</p>
+                <h3>166</h3>
+              </div>
+              <div>
+                <p className="no-pad">sold tickets</p>
+                <h3 className=" ">166</h3>
+              </div>
+            </div>
+            <div className="layout-card-btn bg-change">
+              <p className="light-weight">
+                <Link to="/raffle">VIEW RAFFLE</Link>
+              </p>
+              <p className="normal-weight"> Ends in 16:06:17</p>
+            </div>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ a {
   top: 0;
   width: 100%;
   background: white;
-  z-index: 99;
+  z-index: 99999;
   animation: navdown 0.5s both !important;
 }
 @keyframes navdown {
@@ -126,6 +126,7 @@ a {
 .main-side {
   position: fixed;
   top: 0;
+  z-index: 99999;
   height: 100vh;
   background-color: rgb(255, 255, 255);
   padding-right: 30px;
@@ -136,6 +137,7 @@ a {
   right: 0;
   margin-right: 40px;
   margin-top: 20px;
+  z-index: 9999;
 }
 
 .side-space a {
@@ -278,6 +280,7 @@ a {
     position: fixed;
     margin: 0 auto;
     text-align: center;
+    z-index: 9999;
     /* display: block; */
     flex-direction: column;
     align-items: center;

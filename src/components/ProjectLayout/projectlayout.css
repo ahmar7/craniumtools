@@ -154,3 +154,149 @@
   margin-left: 10px;
   background: #3cb187;
 }
+.active-detail {
+  display: block;
+}
+.disable-detail {
+  display: none;
+}
+.no-bg {
+  background-color: white !important;
+  color: black;
+}
+.light-weight {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 10px;
+  line-height: 12px;
+  /* or 120% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 5px !important;
+}
+.normal-weight {
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+.bg-clr {
+  background-color: #435af2;
+  padding: 10px 0;
+}
+.bg-change {
+  background: #f2f4ff;
+  padding: 10px 0;
+}
+.royal-blue {
+  color: #435af2 !important;
+  font-weight: bolder;
+}
+.no-pad {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.no-pad + h3 {
+  text-align: left;
+}
+.bg-change .light-weight {
+  color: black;
+}
+.bg-change .normal-weight {
+  color: #435af2;
+}
+
+@media (max-width: 1260px) {
+  .layout-card-btn button {
+    padding: 8px 7%;
+  }
+}
+@media (max-width: 1080px) {
+  .layout-card-btn button {
+    padding: 8px 5%;
+  }
+}
+@media (max-width: 900px) {
+  .layout-switch button {
+    padding: 0 20px;
+    padding-bottom: 13px !important;
+  }
+  .blck {
+    padding: 10px 10px;
+  }
+  .layout-switch {
+    height: 32px !important;
+  }
+  .staking .left-block h3 {
+    font-size: 20px;
+  }
+  .layout-card-btn button {
+    padding: 8px 3%;
+    font-size: 14px;
+  }
+  .layout-card {
+    width: 16% !important;
+  }
+  .left-block .panel-btn {
+    padding: 8px 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .staking {
+    flex-direction: column;
+  }
+  .blck {
+    margin-bottom: 20px;
+  }
+  .align-left {
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .layout-card {
+    width: 200px !important;
+    margin: 0 auto !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .layout-card-btn button {
+    padding: 8px 20px;
+  }
+  .layout-area {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .circle-dp img {
+    width: 70px;
+    height: 70px;
+  }
+  .social-dp a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .staking .left-block h3 {
+    font-size: 16px;
+    line-height: 13px;
+  }
+  .staking .left-block p {
+    font-size: 13px;
+    margin-top: 2px;
+  }
+  .layout-switch button {
+    padding: 0 13px;
+  }
+  .layout-switch button {
+    font-size: 13px;
+  }
+}
