@@ -1,5 +1,6 @@
 .layout-area {
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .dp-area {
@@ -64,6 +65,7 @@
   font-size: 16px;
   line-height: 18px;
   text-align: center;
+  padding-bottom: 22px !important;
 
   color: #141430;
   background: transparent;
@@ -74,6 +76,81 @@
 }
 .border-active {
   border-bottom: 4px solid #435af2 !important;
-  padding-bottom: 22px !important;
   color: #435af2 !important;
+}
+.staking {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+.staking .left-block h3 {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #435af2;
+  margin: 0;
+}
+.left-block {
+  display: flex;
+}
+.left-block .danger-btn {
+  margin-left: 15px;
+}
+.staking .left-block p {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+
+  color: #141430;
+  margin: 0;
+  margin-top: 7px !important;
+}
+.blck {
+  border-right: 1px solid rgb(233, 233, 233);
+  padding: 20px 27px;
+}
+
+.left-block :nth-child(3) {
+  border: none !important;
+}
+.danger-btn {
+  background-color: #f24343 !important;
+}
+.align-left {
+  margin-top: 27px !important;
+  justify-content: left !important;
+}
+.layout-card {
+  width: 15% !important;
+}
+.layout-card-head {
+  justify-content: center !important;
+}
+.layout-card-btn button {
+  border-radius: 4px;
+  padding: 8px 10%;
+  display: inline;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+.success-btn {
+  margin-left: 10px;
+  background: #3cb187;
 }

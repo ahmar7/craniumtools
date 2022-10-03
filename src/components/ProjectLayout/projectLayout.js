@@ -1,7 +1,32 @@
-import React from "react";
-import { Layoutbg, Dp, Twittersmall, Discordsmall } from "../../utils/allImgs";
+import React, { useState } from "react";
+import {
+  Layoutbg,
+  Dp,
+  Twittersmall,
+  Discordsmall,
+  Img,
+} from "../../utils/allImgs";
 import "./projectlayout.css";
 const ProjectLayout = () => {
+  const [auction, setAuction] = useState(false);
+  const [staking, setStaking] = useState(true);
+  const [raffles, setRaffles] = useState(false);
+  let toggleAuction = () => {
+    setAuction(true);
+    setRaffles(false);
+    setStaking(false);
+  };
+  let togglStaking = () => {
+    setRaffles(false);
+    setAuction(false);
+    setStaking(true);
+  };
+  let togglRaffles = () => {
+    setStaking(false);
+    setAuction(false);
+    setRaffles(true);
+  };
+
   return (
     <div className="me layout-area">
       <div className="layout-background">
@@ -31,20 +56,85 @@ const ProjectLayout = () => {
         </p>
       </div>
       <div className="layout-switch">
-        <button>AUCTIONS</button>
-        <button className="border-active ">STAKING</button>
-        <button>RAFFLES</button>
+        <button
+          onClick={toggleAuction}
+          className={auction ? " border-active " : ""}
+        >
+          AUCTIONS
+        </button>
+        <button
+          onClick={togglStaking}
+          className={staking ? " border-active " : ""}
+        >
+          STAKING
+        </button>
+        <button
+          onClick={togglRaffles}
+          className={raffles ? " border-active " : ""}
+        >
+          RAFFLES
+        </button>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div className="layout-detail">
+        <div className="staking">
+          <div className="left-block">
+            <div className="blck">
+              <h3>0 Staked</h3>
+              <p>Yours Staked</p>
+            </div>
+            <div className="blck">
+              <h3>0 Staked</h3>
+              <p>Total Staked - 1%</p>
+            </div>
+            <div className="blck">
+              <h3>0.00 $SOL</h3>
+              <p>Daily Rewards</p>
+            </div>
+          </div>
+          <div className="left-block">
+            <button className="panel-btn primary-btn">Select Wallet</button>
+            <button className="panel-btn danger-btn">Select Wallet</button>
+          </div>
+        </div>
+      </div>
+      <div className="profile-modal-card align-left">
+        <div className="modal-card layout-card">
+          <img className="dp" src={Img} alt="" />
+          <div className="modal-card-head layout-card-head">
+            <div>
+              <h3>NFT Name 1</h3>
+            </div>
+          </div>
+          <div className="layout-card-btn">
+            <button className="danger-btn">Unstake</button>
+            <button className="success-btn">Claim</button>
+          </div>
+        </div>
+        <div className="modal-card layout-card">
+          <img className="dp" src={Img} alt="" />
+          <div className="modal-card-head layout-card-head">
+            <div>
+              <h3>NFT Name 1</h3>
+            </div>
+          </div>
+          <div className="layout-card-btn">
+            <button className="danger-btn">Unstake</button>
+            <button className="success-btn">Claim</button>
+          </div>
+        </div>
+        <div className="modal-card layout-card">
+          <img className="dp" src={Img} alt="" />
+          <div className="modal-card-head layout-card-head">
+            <div>
+              <h3>NFT Name 1</h3>
+            </div>
+          </div>
+          <div className="layout-card-btn">
+            <button className="danger-btn">Unstake</button>
+            <button className="success-btn">Claim</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
