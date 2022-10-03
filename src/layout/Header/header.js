@@ -21,7 +21,7 @@ const Header = () => {
   window.addEventListener("scroll", function () {
     let header = this.document.querySelector("#header2");
 
-    if (window.scrollY > 100) {
+    if (window.scrollY > 150) {
       header.classList.add("sticky");
     } else {
       header.classList.remove("sticky");
