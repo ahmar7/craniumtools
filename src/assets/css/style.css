@@ -57,6 +57,12 @@
   padding-top: 30px !important;
   padding-bottom: 50px !important;
 }
+@media (max-width: 1000px) {
+  .me {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
 @media (max-width: 768px) {
   .me {
     margin-left: 35px;

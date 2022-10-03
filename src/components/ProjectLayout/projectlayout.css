@@ -1,0 +1,79 @@
+.layout-area {
+  margin-top: 40px;
+}
+
+.dp-area {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.layout-background img {
+  width: 100%;
+}
+.circle-dp img {
+  position: absolute;
+  margin-top: -60px;
+}
+.circle-dp img {
+  width: 100px;
+  height: 100px;
+}
+.social-dp a {
+  margin-left: 20px;
+}
+.social-dp a img {
+  width: 48px;
+  height: 48px;
+}
+
+.skull-area {
+  margin-top: 10px;
+}
+
+.skull-area h3 {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+  margin: 0;
+  color: #141430;
+}
+
+.skull-area p {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #141430;
+}
+
+.layout-switch {
+  margin-top: 30px;
+  height: 42px;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.layout-switch button {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #141430;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 40px;
+  cursor: pointer;
+}
+.border-active {
+  border-bottom: 4px solid #435af2 !important;
+  padding-bottom: 22px !important;
+  color: #435af2 !important;
+}

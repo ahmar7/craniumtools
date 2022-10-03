@@ -35,8 +35,8 @@ const Header = () => {
             <i class="fa-solid fa-bars"></i>
           </div>
           <ul className={sideactive ? "nav-ul  mbl-nav" : "nav-ul desk-view"}>
-            <li>
-              <div onClick={closeBar} className="close-side-bar">
+            <li className="close-side-bar">
+              <div onClick={closeBar}>
                 <i class="fa-sharp fa-solid fa-x"></i>
               </div>
             </li>
@@ -56,6 +56,9 @@ const Header = () => {
             </li>
             <li onClick={closeBar} className="others">
               <NavLink to="/configure">Configure</NavLink>
+            </li>
+            <li onClick={closeBar} className="others">
+              <NavLink to="/layout">Layout</NavLink>
             </li>
           </ul>
         </div>

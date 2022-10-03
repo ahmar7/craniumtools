@@ -1,9 +1,13 @@
 import Logo from "../../assets/img/Logo.png";
 import Delete from "../../assets/img/delete.svg";
 import Img from "../../assets/img/img.png";
+import Dp from "../../assets/img/circle.png";
+import Twittersmall from "../../assets/img/twitter.svg";
+import Discordsmall from "../../assets/img/discord.svg";
 import Cross from "../../assets/img/cross.png";
 import Plus from "../../assets/img/plus 1.svg";
 import Vector from "../../assets/img/Vector.svg";
+import Layoutbg from "../../assets/img/layoutbg.png";
 import Edit from "../../assets/img/edit.svg";
 import HeaderImg from "../../assets/img/Header Image.png";
 import Icon1 from "../../assets/img/eIcons/PBaaS.svg";
@@ -45,4 +49,8 @@ export {
   Coinbase,
   Walletconnect,
   Fortmatic,
+  Layoutbg,
+  Dp,
+  Twittersmall,
+  Discordsmall,
 };

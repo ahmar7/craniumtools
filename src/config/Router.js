@@ -16,6 +16,7 @@ import Configurationtoken from "../pages/Configuration/Configurationtoken";
 import Configure from "../pages/Configure";
 import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
+import Layout from "../pages/Layout";
 import Manage from "../pages/Manage";
 import Services from "../pages/Services";
 
@@ -47,6 +48,7 @@ const Routerapp = () => {
             element={<Configurationsetting />}
           />
           <Route path="configuration/token" element={<Configurationtoken />} />
+          <Route path="layout" element={<Layout />} />
         </Routes>
       </Router>
     </div>
