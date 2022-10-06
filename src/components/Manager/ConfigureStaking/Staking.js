@@ -7,7 +7,7 @@ const Staking = () => {
       <div className="project-container">
         <div className="project-heading">
           <h3>Configure Staking</h3>
-          <span class="underline"></span>
+          <span className="underline"></span>
           <p>
             Please make sure you are signed in with the correct wallet before
             proceeding. Having Issues? <br /> Reach out to us on Discord to
@@ -36,7 +36,7 @@ const Staking = () => {
           <br />
           <div className="project-heading">
             <h3>Collection Details</h3>
-            <span class="underline"></span>
+            <span className="underline"></span>
             <p>
               Past here the Mint Hash List (Token Address List) containing all
               the NFTs of your collection. It is <br /> exactly the same Hash

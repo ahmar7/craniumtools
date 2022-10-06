@@ -21,26 +21,31 @@ const Token = () => {
         <div className="scroll-tbl">
           <table>
             <thead>
-              <th className="p-25">Token Symbol</th>
-              <th>Address</th>
-              <th>Decimal Points</th>
-              <th>Balance</th>
-              <th>Action</th>
+              <tr>
+                <th className="p-25">Token Symbol</th>
+                <th>Address</th>
+                <th>Decimal Points</th>
+                <th>Balance</th>
+                <th>Action</th>
+              </tr>
             </thead>
-            <tr className="no-border">
-              <td className="p-25 bold-text no-border">$SOL</td>
-              <td className="no-border">
-                22mwV4x...76 <img className="vector-img" src={Vector} alt="" />
-              </td>
-              <td className="no-border"> 9</td>
-              <td className="no-border">0</td>
+            <tbody>
+              <tr className="no-border">
+                <td className="p-25 bold-text no-border">$SOL</td>
+                <td className="no-border">
+                  22mwV4x...76{" "}
+                  <img className="vector-img" src={Vector} alt="" />
+                </td>
+                <td className="no-border"> 9</td>
+                <td className="no-border">0</td>
 
-              <td className="p-25 no-border">
-                <button class="container-btn">
-                  <Link to="#">Remove</Link>
-                </button>
-              </td>
-            </tr>
+                <td className="p-25 no-border">
+                  <button className="container-btn">
+                    <Link to="#">Remove</Link>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>

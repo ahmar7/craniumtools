@@ -26,7 +26,7 @@ const ConfigurationRaffle = () => {
       <div className="project-container">
         <div className="project-heading">
           <h3>Configure Raffle</h3>
-          <span class="underline"></span>
+          <span className="underline"></span>
           <p>Configure the projects auction or create one for them!</p>
         </div>
         <form className="raffle-form" action="#">
@@ -104,7 +104,7 @@ const ConfigurationRaffle = () => {
               <div className="project-heading special">
                 <br />
                 <h3>Choose Raffle NFT</h3>
-                <span class="underline"></span>
+                <span className="underline"></span>
                 <p>
                   Please make sure you are signed in with the correct wallet
                   before proceeding. Having Issues? <br /> Reach out to us on

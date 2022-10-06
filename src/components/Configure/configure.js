@@ -8,7 +8,7 @@ const Configure = () => {
       <div className="project-container">
         <div className="project-heading">
           <h3>Set-Up Your Page</h3>
-          <span class="underline"></span>
+          <span className="underline"></span>
           <p>
             Please make sure you are signed in with the correct wallet before
             proceeding. Having Issues? <br /> Reach out to us on Discord to

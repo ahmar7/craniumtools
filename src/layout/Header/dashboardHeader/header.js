@@ -3,41 +3,41 @@ import { Logo } from "../../../utils/allImgs";
 import { Link, NavLink } from "react-router-dom";
 import "../header.css";
 const Header = () => {
-  const [sideactive, setSideactive] = useState(false);
+  const [sideactive2, setSideactive2] = useState(false);
 
   const toggleBar = () => {
-    setSideactive(true);
+    setSideactive2(true);
   };
   const closeBar = () => {
-    setSideactive(false);
+    setSideactive2(false);
   };
 
-  if (sideactive) {
+  if (sideactive2) {
     document.body.classList.add("active-modal");
   } else {
     document.body.classList.remove("active-modal");
   }
-  window.addEventListener("scroll", function () {
-    let header = this.document.querySelector("#header");
+  // window.addEventListener("scroll", function () {
+  //   let header = this.document.querySelector("#header");
 
-    if (window.scrollY > 150) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
-  });
+  //   if (window.scrollY > 150) {
+  //     header.classList.add("sticky");
+  //   } else {
+  //     header.classList.remove("sticky");
+  //   }
+  // });
   return (
     <div id="header" className="main-container ">
-      <div onClick={closeBar} className={sideactive ? " overlay " : ""}></div>
+      <div onClick={closeBar} className={sideactive2 ? " overlay " : ""}></div>
       <div className="header me">
         <div className="left-colmn">
           <div onClick={toggleBar} className="mbl-view">
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </div>
-          <ul className={sideactive ? "nav-ul  mbl-nav" : "nav-ul desk-view"}>
+          <ul className={sideactive2 ? "nav-ul  mbl-nav" : "nav-ul desk-view"}>
             <li className="close-side-bar">
               <div onClick={closeBar}>
-                <i class="fa-sharp fa-solid fa-x"></i>
+                <i className="fa-sharp fa-solid fa-x"></i>
               </div>
             </li>
             <li className="logo-bar">

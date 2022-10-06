@@ -9,7 +9,7 @@ const Managers = () => {
         <h3>
           Manage <span className="banner-c"> Managers</span>
         </h3>
-        <span class="underline"></span>
+        <span className="underline"></span>
         <p>
           is committed to creating a new generation of grade NFT projects across{" "}
           <br /> the Web3 space. We will do this by providing efficient,

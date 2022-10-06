@@ -6,7 +6,7 @@ const Configurationsetting = () => {
       <div className="project-container">
         <div className="project-heading">
           <h3>Configure Project</h3>
-          <span class="underline"></span>
+          <span className="underline"></span>
           <p>Configure the projects socials below!</p>
         </div>
         <form className="project-form" action="">

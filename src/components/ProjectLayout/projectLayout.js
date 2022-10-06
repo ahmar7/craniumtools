@@ -339,7 +339,7 @@ const ProjectLayout = () => {
                 <br />
 
                 <h3>Choose NFTs</h3>
-                <span class="underline"></span>
+                <span className="underline"></span>
                 <p>
                   Please make sure you are signed in with the correct wallet
                   before proceeding. Having Issues? <br /> Reach out to us on

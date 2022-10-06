@@ -8,7 +8,7 @@ const Project = () => {
     <div className="mb mt">
       <div className="heading-section">
         <h3>Manage NFT Projects</h3>
-        <span class="underline"></span>
+        <span className="underline"></span>
         <p>
           is committed to creating a new generation of grade NFT projects across{" "}
           <br /> the Web3 space. We will do this by providing efficient,

@@ -15,7 +15,7 @@ const Launch = () => {
     <div className="">
       <div className="heading-section   pt pm section-bg">
         <h3>Ready to begin setting up services?</h3>
-        <span class="underline"></span>
+        <span className="underline"></span>
         <p>
           Before persisting make sure to sign in with a noteworthy wallet. This
           wallet will act as an admin <br /> configuration to operate your

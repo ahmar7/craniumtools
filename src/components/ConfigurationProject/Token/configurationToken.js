@@ -60,30 +60,35 @@ const ConfigurationToken = () => {
         <div className="scroll-tbl">
           <table>
             <thead>
-              <th className="p-25">Token Symbol</th>
-              <th>Address</th>
-              <th>Decimal Points</th>
-              <th>Balance</th>
-              <th>Action</th>
+              <tr>
+                <th className="p-25">Token Symbol</th>
+                <th>Address</th>
+                <th>Decimal Points</th>
+                <th>Balance</th>
+                <th>Action</th>
+              </tr>
             </thead>
-            <tr className="no-border">
-              <td className="p-25 bold-text no-border">$SOL</td>
-              <td className="no-border">
-                22mwV4x...76 <img className="vector-img" src={Vector} alt="" />
-              </td>
-              <td className="no-border"> 9</td>
-              <td className="no-border">0</td>
+            <tbody>
+              <tr className="no-border">
+                <td className="p-25 bold-text no-border">$SOL</td>
+                <td className="no-border">
+                  22mwV4x...76{" "}
+                  <img className="vector-img" src={Vector} alt="" />
+                </td>
+                <td className="no-border"> 9</td>
+                <td className="no-border">0</td>
 
-              <td className="p-25 no-border">
-                <button
-                  style={{ backgroundColor: "#3CB187", cursor: "pointer" }}
-                  class="container-btn success-btn"
-                  onClick={toggleFundModal}
-                >
-                  <Link to="#">Fund</Link>
-                </button>
-              </td>
-            </tr>
+                <td className="p-25 no-border">
+                  <button
+                    style={{ backgroundColor: "#3CB187", cursor: "pointer" }}
+                    className="container-btn success-btn"
+                    onClick={toggleFundModal}
+                  >
+                    <Link to="#">Fund</Link>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
@@ -104,7 +109,7 @@ const ConfigurationToken = () => {
               <br />
               <div className="project-heading special">
                 <h3>Connect Token</h3>
-                <span class="underline"></span>
+                <span className="underline"></span>
                 <p>Please make sure you enter the currect info.</p>
               </div>
               <br />
@@ -158,7 +163,7 @@ const ConfigurationToken = () => {
               <div className="project-heading special">
                 <br />
                 <h3>Fund Token Reward Tool</h3>
-                <span class="underline"></span>
+                <span className="underline"></span>
                 <p>Please make sure you enter the currect info.</p>
               </div>
               <br />

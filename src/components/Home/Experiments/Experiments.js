@@ -6,7 +6,7 @@ const Experiments = () => {
     <div id="experiment" className="experiments-main section-bg pdt mt">
       <div className="heading-section">
         <h3>Experiments</h3>
-        <span class="underline"></span>
+        <span className="underline"></span>
         <p>
           Integrate benefits into your project hassle-free. <br /> We offer a
           variety of services for you to choose from!

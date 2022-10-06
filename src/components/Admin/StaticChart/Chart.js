@@ -13,7 +13,7 @@ const Chart = () => {
         <h3>
           Statistics <span className="banner-c">Chart</span>
         </h3>
-        <span class="underline"></span>
+        <span className="underline"></span>
         <p>
           is committed to creating a new generation of grade NFT projects across
           <br /> the Web3 space. We will do this by providing efficient,

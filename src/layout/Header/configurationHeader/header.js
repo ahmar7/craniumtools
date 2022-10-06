@@ -3,16 +3,16 @@ import "../header.css";
 import { Logo, Cross } from "../../../utils/allImgs";
 import { Link, NavLink } from "react-router-dom";
 const Header = () => {
-  const [sideactive, setSideactive] = useState(false);
+  const [sideactive3, setSideactive3] = useState(false);
 
   const toggleBar = () => {
-    setSideactive(true);
+    setSideactive3(true);
   };
   const closeBar = () => {
-    setSideactive(false);
+    setSideactive3(false);
   };
 
-  if (sideactive) {
+  if (sideactive3) {
     document.body.classList.add("active-modal");
   } else {
     document.body.classList.remove("active-modal");
@@ -20,10 +20,10 @@ const Header = () => {
 
   return (
     <>
-      <div onClick={closeBar} className={sideactive ? " overlay " : ""}></div>
-      <div className={sideactive ? " show-it   main-side" : "main-side "}>
+      <div onClick={closeBar} className={sideactive3 ? " overlay " : ""}></div>
+      <div className={sideactive3 ? " show-it   main-side" : "main-side "}>
         <div onClick={closeBar} className="close-bar">
-          <i class="fa-sharp fa-solid fa-x"></i>
+          <i className="fa-sharp fa-solid fa-x"></i>
         </div>
         <div className=" side-header ">
           <div className="left-colmn">
@@ -58,7 +58,7 @@ const Header = () => {
       <div className="upper-bg">
         <div className="sidebar-btn">
           <div onClick={toggleBar} className="mobile-bar">
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </div>
           <Link to="#">
             <button className="panel-btn primary-btn">Select Wallet</button>
