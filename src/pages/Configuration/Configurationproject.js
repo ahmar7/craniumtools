@@ -1,7 +1,6 @@
 import React from "react";
 import ConfigurationProject from "../../components/ConfigurationProject/Project/configurationProject";
 import Top from "../../components/GoToTop/Top";
-import Raffle from "../../components/Services/ConfigureRaffle/Raffle";
 import Header from "../../layout/Header/configurationHeader/header";
 
 const Configuration = () => {

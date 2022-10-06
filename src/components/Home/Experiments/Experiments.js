@@ -1,9 +1,9 @@
 import React from "react";
-import "./experiments.css"
-import {Icon1,Icon2,Icon3,Icon4} from '../../../utils/allImgs'
+import "./experiments.css";
+import { Icon1, Icon2, Icon3, Icon4 } from "../../../utils/allImgs";
 const Experiments = () => {
   return (
-    <div className="experiments-main mb mt">
+    <div id="experiment" className="experiments-main section-bg pdt mt">
       <div className="heading-section">
         <h3>Experiments</h3>
         <span class="underline"></span>

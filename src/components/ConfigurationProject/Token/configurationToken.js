@@ -22,6 +22,25 @@ const ConfigurationToken = () => {
   } else {
     document.body.classList.remove("active-modal");
   }
+  const [fundmodal, setFundModal] = useState(false);
+  const [isFundActive, setIsFundActive] = useState(false);
+
+  const toggleFundModal = () => {
+    setFundModal(true);
+
+    setIsFundActive(false);
+  };
+  const closeFundModal = () => {
+    setIsFundActive(true);
+    setTimeout(() => {
+      setFundModal(false);
+    }, 300);
+  };
+  if (modal) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
   return (
     <div className=" token-config pname  section-bg side-blocks ">
       <div className="token-bg tbl-width   ">
@@ -57,8 +76,9 @@ const ConfigurationToken = () => {
 
               <td className="p-25 no-border">
                 <button
-                  style={{ backgroundColor: "#3CB187" }}
+                  style={{ backgroundColor: "#3CB187", cursor: "pointer" }}
                   class="container-btn success-btn"
+                  onClick={toggleFundModal}
                 >
                   <Link to="#">Fund</Link>
                 </button>
@@ -81,6 +101,7 @@ const ConfigurationToken = () => {
           ></div>
           <div className="modal-content">
             <div className="project-modal">
+              <br />
               <div className="project-heading special">
                 <h3>Connect Token</h3>
                 <span class="underline"></span>
@@ -116,11 +137,59 @@ const ConfigurationToken = () => {
                       className="panel-btn primary-btn"
                     >
                       Connect
-                    </button>
+                    </button>{" "}
+                    <br />
+                    <br />
                   </div>
                 </div>
               </form>
               <div className="close-modal" onClick={closeModal}>
+                <img src={Cross} />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {fundmodal && (
+        <div className={isFundActive ? "modalup modal" : "modal"}>
+          <div className={isFundActive ? "overlayup overlay" : "overlay"}></div>
+          <div className="modal-content">
+            <div className="project-modal">
+              <div className="project-heading special">
+                <br />
+                <h3>Fund Token Reward Tool</h3>
+                <span class="underline"></span>
+                <p>Please make sure you enter the currect info.</p>
+              </div>
+              <br />
+              <br />
+              <form className="modal-form" action="#">
+                <div className="colmn-right raffle-block">
+                  <div className="raffle-inputcontainer">
+                    <label>Number of tokens to fund</label>
+                    <input
+                      required
+                      type="text"
+                      className="raffle-input"
+                      placeholder="Number of tokens to fund"
+                    />
+                  </div>
+
+                  <br />
+
+                  <div className="  ">
+                    <button
+                      onClick={closeFundModal}
+                      className="panel-btn primary-btn"
+                    >
+                      Select Wallet
+                    </button>
+                    <br />
+                    <br />
+                  </div>
+                </div>
+              </form>
+              <div className="close-modal" onClick={closeFundModal}>
                 <img src={Cross} />
               </div>
             </div>

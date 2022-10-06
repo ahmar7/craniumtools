@@ -45,20 +45,18 @@ const Header = () => {
                 <img src={Logo} alt="" />
               </NavLink>
             </li>
+
             <li onClick={closeBar} className="others">
-              <NavLink to="/manage">Manage</NavLink>
+              <NavLink to="/admin">Admin</NavLink>
             </li>
             <li onClick={closeBar} className="others">
-              <NavLink to="/dashboard">Dashboard</NavLink>
+              <NavLink to="/manager">Manager</NavLink>
             </li>
             <li onClick={closeBar} className="others">
-              <NavLink to="/services">Services</NavLink>
+              <NavLink to="/configuration/project">Configure</NavLink>
             </li>
             <li onClick={closeBar} className="others">
-              <NavLink to="/configure">Configure</NavLink>
-            </li>
-            <li onClick={closeBar} className="others">
-              <NavLink to="/layout">Layout</NavLink>
+              <NavLink to="/project">Project</NavLink>
             </li>
           </ul>
         </div>

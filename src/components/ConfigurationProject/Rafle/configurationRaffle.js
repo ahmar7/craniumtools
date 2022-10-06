@@ -102,6 +102,7 @@ const ConfigurationRaffle = () => {
           <div className="modal-content">
             <div className="project-modal">
               <div className="project-heading special">
+                <br />
                 <h3>Choose Raffle NFT</h3>
                 <span class="underline"></span>
                 <p>
@@ -143,6 +144,8 @@ const ConfigurationRaffle = () => {
                 <button onClick={closeNft} className="panel-btn primary-btn">
                   Select NFT
                 </button>
+                <br />
+                <br />
               </div>
               <div className="close-modal" onClick={closeNft}>
                 <img src={Cross} />

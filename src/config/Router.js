@@ -15,12 +15,12 @@ import Configurationsetting from "../pages/Configuration/Configurationsetting";
 import Configurationstaking from "../pages/Configuration/Configurationstaking";
 import Configurationtoken from "../pages/Configuration/Configurationtoken";
 import Configure from "../pages/Configure";
-import Dashboard from "../pages/Dashboard";
+import Admin from "../pages/Admin";
 import Home from "../pages/Home";
-import Layout from "../pages/Layout";
-import Manage from "../pages/Manage";
+import Project from "../pages/Project";
+import Building from "../pages/Building";
 import Raffle from "../pages/Raffle";
-import Services from "../pages/Services";
+import Manager from "../pages/Manager";
 
 const Routerapp = () => {
   return (
@@ -28,9 +28,9 @@ const Routerapp = () => {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="services" element={<Services />} />
-          <Route path="manage" element={<Manage />} />
+          <Route path="admin" element={<Admin />} />
+          <Route path="manager" element={<Manager />} />
+          <Route path="building" element={<Building />} />
           <Route path="configure" element={<Configure />} />
           <Route path="configuration/project" element={<Configuration />} />
           <Route
@@ -50,7 +50,7 @@ const Routerapp = () => {
             element={<Configurationsetting />}
           />
           <Route path="configuration/token" element={<Configurationtoken />} />
-          <Route path="layout" element={<Layout />} />
+          <Route path="project" element={<Project />} />
           <Route path="raffle" element={<Raffle />} />
           <Route path="auction" element={<Auction />} />
         </Routes>

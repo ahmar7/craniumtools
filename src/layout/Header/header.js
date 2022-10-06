@@ -47,18 +47,18 @@ const Header = () => {
               </Link>
             </li>
             <li onClick={closeBar} className="others">
-              <Link to="">Home</Link>
+              <a href="#">Home</a>
             </li>
             <li onClick={closeBar} className="others">
-              <Link to="">Experiments</Link>
+              <a href="#experiment">Experiments</a>
             </li>
             <li onClick={closeBar} className="others">
-              <Link to="">Contacts</Link>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
         <div className="right-colmn">
-          <Link to="/manage">
+          <Link to="/admin">
             <button className="panel-btn">Project Panel</button>
           </Link>
         </div>

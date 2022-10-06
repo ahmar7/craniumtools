@@ -34,6 +34,15 @@ const Configure = () => {
               className="project-input"
             />
           </div>
+          <div className="input-container">
+            <label>Header URL</label>
+            <input
+              type="text"
+              placeholder="Header URL"
+              required
+              className="project-input"
+            />
+          </div>
           <div className="input-container ic">
             <label>Staking Page URL</label>
             <input
@@ -46,9 +55,10 @@ const Configure = () => {
           </div>
           <br />
           <div className=" ">
-            <button className="panel-btn primary-btn">
-              <Link to="/configuration/project">Launch Page</Link>
-            </button>
+            <Link to="/configuration/project">
+              {" "}
+              <button className="panel-btn primary-btn">Launch Page</button>
+            </Link>
           </div>
         </form>
       </div>

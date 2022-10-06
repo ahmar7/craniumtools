@@ -1,0 +1,177 @@
+.raffle-form {
+  margin: 0 auto;
+  padding: 50px 0px 0 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+label {
+  font-family: "Proxima Nova";
+}
+.raffle-block label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  color: #141430;
+}
+.raffle-block label {
+  display: block;
+}
+.image-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 18px;
+  margin-top: 10px;
+  width: 172px;
+  height: 172px;
+
+  background: #ffffff;
+  border: 1px solid #e1e0e2;
+  border-radius: 4px;
+}
+.image-picker img {
+  cursor: pointer;
+}
+.raffle-input {
+  display: block;
+  margin-top: 10px;
+  padding: 19px 18px;
+
+  width: 100%;
+  outline: none;
+
+  background: #ffffff;
+  border: 1px solid #e1e0e2;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.raffle-form .colmn-right {
+  width: 100%;
+
+  margin-left: 30px;
+}
+.raffle-inputcontainer {
+  margin-top: 20px;
+  width: 94%;
+
+  margin-bottom: 20px;
+}
+.no-gap {
+  margin-top: 0 !important;
+}
+.raffle-btn {
+  display: flex;
+  justify-content: right;
+  margin-top: 40px !important;
+}
+
+.profile-card {
+  margin-top: 60px !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 230px;
+  padding: 15px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+  background: #ffffff;
+  /* Box-shadow */
+
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.1);
+}
+.dp {
+  width: 100%;
+  text-align: center;
+}
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.card-head h3 {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  text-align: center;
+
+  color: #000000;
+}
+.card-delete {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.card-edit {
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+}
+.click-btn button {
+  width: 100%;
+  padding: 16px 0;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 1px solid #141430;
+}
+@media (min-width: 1400px) {
+  .card {
+    width: 18%;
+  }
+}
+@media (max-width: 850px) {
+  .image-picker {
+    width: 125px;
+    height: 125px;
+  }
+}
+@media (max-width: 600px) {
+  .raffle-form {
+    margin: 0 auto;
+    padding: 50px 0px 0 0px;
+
+    flex-direction: column;
+  }
+  .colmn-left.raffle-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .raffle-form .colmn-right {
+    width: 100%;
+    margin-left: 0;
+  }
+  .raffle-input {
+    padding: 13px 10px;
+    width: 95%;
+  }
+  .card {
+    width: 250px;
+  }
+  .raffle-inputcontainer {
+    width: 100%;
+  }
+}

@@ -6,6 +6,7 @@ import {
   Twittersmall,
   Discordsmall,
   Img,
+  Cross,
 } from "../../utils/allImgs";
 import "./projectlayout.css";
 const ProjectLayout = () => {
@@ -35,7 +36,26 @@ const ProjectLayout = () => {
   let goEnd = () => {
     setLive(false);
   };
+  // Nft Modal
+  const [nftmodal, setNftModal] = useState(false);
+  const [nftisActive, setNftIsActive] = useState(false);
 
+  const toggleNft = () => {
+    setNftModal(true);
+
+    setNftIsActive(false);
+  };
+  const closeNft = () => {
+    setNftIsActive(true);
+    setTimeout(() => {
+      setNftModal(false);
+    }, 300);
+  };
+  if (nftmodal) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
   return (
     <div className="me layout-area">
       <div className="layout-background">
@@ -112,8 +132,8 @@ const ProjectLayout = () => {
           <div
             className={
               live
-                ? "modal-card layout-card active-detail"
-                : " modal-card layout-card disable-detail"
+                ? " modal-card layout-card disable-detail"
+                : "modal-card layout-card active-detail"
             }
           >
             <img className="dp" src={Img} alt="" />
@@ -133,8 +153,8 @@ const ProjectLayout = () => {
           <div
             className={
               live
-                ? " modal-card layout-card disable-detail"
-                : "modal-card layout-card active-detail"
+                ? "modal-card layout-card active-detail"
+                : " modal-card layout-card disable-detail"
             }
           >
             <img className="dp" src={Img} alt="" />
@@ -180,8 +200,10 @@ const ProjectLayout = () => {
               </div>
             </div>
             <div className="left-block">
-              <button className="panel-btn primary-btn">Select Wallet</button>
-              <button className="panel-btn danger-btn">Select Wallet</button>
+              <button onClick={toggleNft} className="panel-btn primary-btn">
+                Stake NFTs{" "}
+              </button>
+              <button className="panel-btn danger-btn">Unstake All</button>
             </div>
           </div>
         </div>
@@ -253,8 +275,8 @@ const ProjectLayout = () => {
           <div
             className={
               live
-                ? "modal-card layout-card active-detail"
-                : " modal-card layout-card disable-detail"
+                ? " modal-card layout-card disable-detail"
+                : "modal-card layout-card active-detail"
             }
           >
             <img className="dp" src={Img} alt="" />
@@ -273,8 +295,8 @@ const ProjectLayout = () => {
           <div
             className={
               live
-                ? " modal-card layout-card disable-detail"
-                : "modal-card layout-card active-detail"
+                ? "modal-card layout-card active-detail"
+                : " modal-card layout-card disable-detail"
             }
           >
             <img className="dp" src={Img} alt="" />
@@ -305,6 +327,66 @@ const ProjectLayout = () => {
           </div>
         </div>
       </div>
+      {nftmodal && (
+        <div className={nftisActive ? "modalup modal" : "modal"}>
+          <div
+            onClick={toggleNft}
+            className={nftisActive ? "overlayup overlay" : "overlay"}
+          ></div>
+          <div className="modal-content">
+            <div className="project-modal">
+              <div className="project-heading special">
+                <br />
+
+                <h3>Choose NFTs</h3>
+                <span class="underline"></span>
+                <p>
+                  Please make sure you are signed in with the correct wallet
+                  before proceeding. Having Issues? <br /> Reach out to us on
+                  Discord to assist with the matter!
+                </p>
+              </div>
+              <div className="profile-modal-card">
+                <div className="modal-card">
+                  <img className="dp" src={Img} alt="" />
+                  <div className="modal-card-head">
+                    <div>
+                      <h3>NFT Name 1</h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="modal-card">
+                  <img className="dp" src={Img} alt="" />
+                  <div className="modal-card-head">
+                    <div>
+                      <h3>NFT Name 1</h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="modal-card">
+                  <img className="dp" src={Img} alt="" />
+                  <div className="modal-card-head">
+                    <div>
+                      <h3>NFT Name 1</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>{" "}
+              <br />
+              <div className="  ">
+                <button onClick={closeNft} className="panel-btn primary-btn">
+                  Select NFT
+                </button>
+                <br />
+                <br />
+              </div>
+              <div className="close-modal" onClick={closeNft}>
+                <img src={Cross} />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

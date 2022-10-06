@@ -61,16 +61,23 @@
 
   color: #3d3d44;
 }
+.pdt {
+  padding-top: 75px !important;
+  padding-bottom: 80px !important;
+}
 
-@media (min-width:1490px) {
-  .e-block{
+@media (min-width: 1490px) {
+  .e-block {
     width: 347px;
     height: 256px;
   }
 }
-@media (min-width:1750px) {
- .e-block {
-    width: 394px;
-    height: 278px;
-}
+@media (min-width: 1750px) {
+  .e-block {
+    width: 24%;
+    height: 320px;
+  }
+  .e-block p {
+    font-size: 18px;
+  }
 }
