@@ -8,12 +8,9 @@ const Auction = () => {
         <div className="result-block">
           <img src={Img} alt="" />
           <div className="result-button">
-            <select name="" id="">
-              <option value="">10</option>
-              <option value="">12</option>
-              <option value="">116</option>
-            </select>
-            <button className="primary-btn  ">Buy Raffle Ticket</button>
+            <input type="number" placeholder="10" />
+
+            <button className="primary-btn  ">Bid</button>
           </div>
         </div>
         <div className="result-block let">

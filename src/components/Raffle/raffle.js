@@ -8,12 +8,8 @@ const Raffle = () => {
         <div className="result-block">
           <img src={Img} alt="" />
           <div className="result-button">
-            <select name="" id="">
-              <option value="">10</option>
-              <option value="">12</option>
-              <option value="">116</option>
-            </select>
-            <button className="primary-btn  ">Buy Raffle Ticket</button>
+            <input type="number" placeholder="10" />
+            <button className="primary-btn  ">Bid</button>
           </div>
         </div>
         <div className="result-block let">
@@ -21,8 +17,7 @@ const Raffle = () => {
             <h3 className="result-head">NFT NAME</h3>
           </div>
           <div className="result-blk">
-            <div>
-              {" "}
+            <div className="result-first">
               <p className="para">ENDS IN</p>
               <h3 className="primary-head">1D 1H 1M 10S</h3>
             </div>
@@ -32,7 +27,7 @@ const Raffle = () => {
             </div>
           </div>
           <div className="result-blk">
-            <div>
+            <div className="result-first">
               <p className="para">START DATE</p>
               <h3 className="primary-head">September 23, 2022</h3>
             </div>
@@ -42,7 +37,7 @@ const Raffle = () => {
             </div>
           </div>
           <div className="result-blk">
-            <div>
+            <div className="result-first">
               <p className="para">TOTAL TICKETS</p>
               <h3 className="primary-head">100</h3>
             </div>
