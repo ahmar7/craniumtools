@@ -143,14 +143,12 @@ const ProjectLayout = () => {
               </div>
             </div>
             <div className="layout-card-btn bg-clr">
-              <p className="light-weight">
-                {" "}
-                <Link to="/auction">AUCTION WINNER</Link>
-              </p>
+              <p className="light-weight">AUCTION WINNER</p>
               <p className="normal-weight"> 22mwV4x...76</p>
             </div>
           </div>
           <div
+          
             className={
               live
                 ? "modal-card layout-card active-detail"
@@ -286,9 +284,7 @@ const ProjectLayout = () => {
               </div>
             </div>
             <div className="layout-card-btn bg-clr">
-              <p className="light-weight">
-                <Link to="/raffle">RAFFLE winner</Link>
-              </p>
+              <p className="light-weight">RAFFLE winner</p>
               <p className="normal-weight"> 22mwV4x...76</p>
             </div>
           </div>
